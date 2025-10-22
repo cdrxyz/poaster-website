@@ -5,10 +5,17 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Subheading } from '@/components/text'
-import { getPostBySlug } from '@/lib/posts'
+import { getPostBySlug, getAllPosts } from '@/lib/posts'
 import { ChevronLeftIcon } from '@heroicons/react/16/solid'
 import dayjs from 'dayjs'
 import { notFound } from 'next/navigation'
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts()
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
 
 export async function generateMetadata({ params }) {
   let post = await getPostBySlug((await params).slug)
