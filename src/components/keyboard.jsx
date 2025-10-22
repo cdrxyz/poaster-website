@@ -47,7 +47,7 @@ function Key({ name, width = 36, className, children }) {
       className={clsx(
         className,
         'flex flex-col items-center justify-center gap-0.5 px-1 py-px',
-        'rounded-sm bg-white bg-linear-to-t from-black/3 shadow-2xs ring-1 ring-black/10',
+        'rounded-xs bg-white bg-linear-to-t from-black/3 shadow-2xs ring-1 ring-black/10',
         '[:where(&_svg)]:h-3.5 [:where(&_svg)]:fill-gray-600',
       )}
     >
@@ -60,7 +60,7 @@ function KeyGroup(props) {
   return (
     <div
       {...props}
-      className="grid gap-px rounded-sm bg-black/10 ring-1 ring-black/10 *:ring-0"
+      className="grid gap-px rounded-xs bg-black/10 ring-1 ring-black/10 *:ring-0"
     />
   )
 }
