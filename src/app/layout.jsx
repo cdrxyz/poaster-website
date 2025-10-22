@@ -1,5 +1,3 @@
-import { SanityLive } from '@/sanity/live'
-import { revalidateSyncTags } from '@/sanity/revalidateSyncTags'
 import '@/styles/tailwind.css'
 
 export const metadata = {
@@ -20,13 +18,12 @@ export default function RootLayout({ children }) {
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="The Radiant Blog"
           href="/blog/feed.xml"
+          title="Radiant Blog"
         />
       </head>
-      <body className="text-gray-950 antialiased">
+      <body className="bg-gray-50 text-gray-950 antialiased">
         {children}
-        <SanityLive revalidateSyncTags={revalidateSyncTags} />
       </body>
     </html>
   )

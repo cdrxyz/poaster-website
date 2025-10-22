@@ -5,13 +5,12 @@ import { GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
-import { image } from '@/sanity/image'
 import {
   getCategories,
   getFeaturedPosts,
   getPosts,
   getPostsCount,
-} from '@/sanity/queries'
+} from '@/lib/posts'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
   CheckIcon,
@@ -33,7 +32,7 @@ export const metadata = {
 const postsPerPage = 5
 
 async function FeaturedPosts() {
-  let { data: featuredPosts } = await getFeaturedPosts(3)
+  let featuredPosts = await getFeaturedPosts(3)
 
   if (featuredPosts.length === 0) {
     return
@@ -52,13 +51,13 @@ async function FeaturedPosts() {
               {post.mainImage && (
                 <img
                   alt={post.mainImage.alt || ''}
-                  src={image(post.mainImage).size(1170, 780).url()}
+                  src={post.mainImage}
                   className="aspect-3/2 w-full rounded-2xl object-cover"
                 />
               )}
               <div className="flex flex-1 flex-col p-8">
                 <div className="text-sm/5 text-gray-700">
-                  {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+                  {dayjs(post.date).format('dddd, MMMM D, YYYY')}
                 </div>
                 <div className="mt-2 text-base/7 font-medium">
                   <Link href={`/blog/${post.slug}`}>
@@ -74,7 +73,7 @@ async function FeaturedPosts() {
                     {post.author.image && (
                       <img
                         alt=""
-                        src={image(post.author.image).size(64, 64).url()}
+                        src={post.author.image}
                         className="aspect-square size-6 rounded-full object-cover"
                       />
                     )}
@@ -93,7 +92,7 @@ async function FeaturedPosts() {
 }
 
 async function Categories({ selected }) {
-  let { data: categories } = await getCategories()
+  let categories = await getCategories()
 
   if (categories.length === 0) {
     return
@@ -103,7 +102,7 @@ async function Categories({ selected }) {
     <div className="flex flex-wrap items-center justify-between gap-2">
       <Menu>
         <MenuButton className="flex items-center justify-between gap-2 font-medium">
-          {categories.find(({ slug }) => slug === selected)?.title ||
+          {categories.find(({ slug }) => slug === selected)?.name ||
             'All categories'}
           <ChevronUpDownIcon className="size-4 fill-gray-900" />
         </MenuButton>
@@ -129,7 +128,7 @@ async function Categories({ selected }) {
                 className="group grid grid-cols-[16px_1fr] items-center gap-2 rounded-md px-2 py-1 data-focus:bg-gray-950/5"
               >
                 <CheckIcon className="hidden size-4 group-data-selected:block" />
-                <p className="col-start-2 text-sm/6">{category.title}</p>
+                <p className="col-start-2 text-sm/6">{category.name}</p>
               </Link>
             </MenuItem>
           ))}
@@ -144,7 +143,7 @@ async function Categories({ selected }) {
 }
 
 async function Posts({ page, category }) {
-  let { data: posts } = await getPosts(
+  let posts = await getPosts(
     (page - 1) * postsPerPage,
     page * postsPerPage,
     category,
@@ -167,14 +166,14 @@ async function Posts({ page, category }) {
         >
           <div>
             <div className="text-sm/5 max-sm:text-gray-700 sm:font-medium">
-              {dayjs(post.publishedAt).format('dddd, MMMM D, YYYY')}
+              {dayjs(post.date).format('dddd, MMMM D, YYYY')}
             </div>
             {post.author && (
               <div className="mt-2.5 flex items-center gap-3">
                 {post.author.image && (
                   <img
                     alt=""
-                    src={image(post.author.image).width(64).height(64).url()}
+                    src={post.author.image}
                     className="aspect-square size-6 rounded-full object-cover"
                   />
                 )}
