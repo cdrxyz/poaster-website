@@ -117,30 +117,30 @@ function SocialIconLinkedIn(props) {
 function SocialLinks() {
   return (
     <>
+      {/*<Link*/}
+      {/*  href="https://facebook.com"*/}
+      {/*  target="_blank"*/}
+      {/*  aria-label="Visit us on Facebook"*/}
+      {/*  className="text-gray-950 data-hover:text-gray-950/75"*/}
+      {/*>*/}
+      {/*  <SocialIconFacebook className="size-4" />*/}
+      {/*</Link>*/}
       <Link
-        href="https://facebook.com"
-        target="_blank"
-        aria-label="Visit us on Facebook"
-        className="text-gray-950 data-hover:text-gray-950/75"
-      >
-        <SocialIconFacebook className="size-4" />
-      </Link>
-      <Link
-        href="https://x.com"
+        href="https://x.com/PoasterApp"
         target="_blank"
         aria-label="Visit us on X"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
         <SocialIconX className="size-4" />
       </Link>
-      <Link
-        href="https://linkedin.com"
-        target="_blank"
-        aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-hover:text-gray-950/75"
-      >
-        <SocialIconLinkedIn className="size-4" />
-      </Link>
+      {/*<Link*/}
+      {/*  href="https://linkedin.com"*/}
+      {/*  target="_blank"*/}
+      {/*  aria-label="Visit us on LinkedIn"*/}
+      {/*  className="text-gray-950 data-hover:text-gray-950/75"*/}
+      {/*>*/}
+      {/*  <SocialIconLinkedIn className="size-4" />*/}
+      {/*</Link>*/}
     </>
   )
 }
@@ -148,7 +148,7 @@ function SocialLinks() {
 function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+      &copy; {new Date().getFullYear()} Poaster App. All rights reserved.
     </div>
   )
 }
@@ -156,23 +156,23 @@ function Copyright() {
 export function Footer() {
   return (
     <footer>
-      <Gradient className="relative">
+      <Gradient className="relative mt-10">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
-          <CallToAction />
+          {/*<CallToAction />*/}
           <PlusGrid className="pb-16">
-            <PlusGridRow>
-              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
-                <div className="col-span-2 flex">
-                  <PlusGridItem className="pt-6 lg:pb-6">
-                    <Logo className="h-9" />
-                  </PlusGridItem>
-                </div>
-                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
-                  <Sitemap />
-                </div>
-              </div>
-            </PlusGridRow>
+            {/*<PlusGridRow>*/}
+            {/*  <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">*/}
+            {/*    <div className="col-span-2 flex">*/}
+            {/*      <PlusGridItem className="pt-6 lg:pb-6">*/}
+            {/*        <Logo className="h-9" />*/}
+            {/*      </PlusGridItem>*/}
+            {/*    </div>*/}
+            {/*    <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">*/}
+            {/*      <Sitemap />*/}
+            {/*    </div>*/}
+            {/*  </div>*/}
+            {/*</PlusGridRow>*/}
             <PlusGridRow className="flex justify-between">
               <div>
                 <PlusGridItem className="py-3">
