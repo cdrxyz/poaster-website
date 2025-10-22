@@ -478,13 +478,8 @@ function FrequentlyAskedQuestions() {
   )
 }
 
-export default async function Pricing({ searchParams }) {
-  let params = await searchParams
-  let tier =
-    typeof params.tier === 'string'
-      ? tiers.find(({ slug }) => slug === params.tier)
-      : tiers[0]
-
+export default function Pricing() {
+  let tier = tiers[0]
   return (
     <main className="overflow-hidden">
       <GradientBackground />
