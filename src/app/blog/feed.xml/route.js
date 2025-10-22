@@ -2,7 +2,7 @@ import { getAllPosts } from '@/lib/posts'
 import { Feed } from 'feed'
 import assert from 'node:assert'
 
-export const dynamic = "force-static"
+export const dynamic = "force-dynamic"
 
 export async function GET(req) {
   let siteUrl = new URL(req.url).origin
