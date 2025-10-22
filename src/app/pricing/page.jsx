@@ -19,8 +19,6 @@ export const metadata = {
   description: 'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
 }
 
-export const dynamic = "force-dynamic";
-
 const tiers = [
   {
     name: 'Starter',
