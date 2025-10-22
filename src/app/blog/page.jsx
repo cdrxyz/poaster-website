@@ -29,8 +29,6 @@ export const metadata = {
     'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
 }
 
-export const dynamic = "force-dynamic";
-
 const postsPerPage = 5
 
 async function FeaturedPosts() {
@@ -261,17 +259,9 @@ async function Pagination({ page, category }) {
   )
 }
 
-export default async function Blog({ searchParams }) {
-  let params = await searchParams
-  let page =
-    'page' in params
-      ? typeof params.page === 'string' && parseInt(params.page) > 1
-        ? parseInt(params.page)
-        : notFound()
-      : 1
-
-  let category =
-    typeof params.category === 'string' ? params.category : undefined
+export default async function Blog() {
+  let page = 1
+  let category = undefined
 
   return (
     <main className="overflow-hidden">
