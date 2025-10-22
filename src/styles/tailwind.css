@@ -1,10 +1,6 @@
-@import 'tailwindcss';
-
-@theme {
-  --font-sans: Switzer, system-ui, sans-serif;
-
-  --radius-4xl: 2rem;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @keyframes move-x {
   0% {
