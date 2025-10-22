@@ -29,6 +29,8 @@ export const metadata = {
     'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
 }
 
+export const dynamic = "force-dynamic";
+
 const postsPerPage = 5
 
 async function FeaturedPosts() {
