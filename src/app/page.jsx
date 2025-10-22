@@ -45,10 +45,10 @@ function Hero() {
             We turn writers into poasters. You write long-form, we extract bangers and post them to X to grow your Substack faster.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Coming Soon...</Button>
-            <Button variant="secondary" href="/pricing">
-              See pricing
-            </Button>
+            <Button href="https://x.com/PoasterApp" target="_blank">Follow on X for Updates</Button>
+            {/*<Button variant="secondary" href="/pricing">*/}
+            {/*  See pricing*/}
+            {/*</Button>*/}
           </div>
         </div>
       </Container>
@@ -203,7 +203,7 @@ export default function Home() {
       {/*  <DarkBentoSection />*/}
       {/*</main>*/}
       {/*<Testimonials />*/}
-      {/*<Footer />*/}
+      <Footer />
     </div>
   )
 }
