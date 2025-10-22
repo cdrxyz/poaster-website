@@ -243,7 +243,7 @@ async function Pagination({ page, category }) {
             className={clsx(
               'size-7 rounded-lg text-center text-sm/7 font-medium',
               'data-hover:bg-gray-100',
-              'data-active:shadow-sm data-active:ring-1 data-active:ring-black/10',
+              'data-active:shadow-xs data-active:ring-1 data-active:ring-black/10',
               'data-active:data-hover:bg-gray-50',
             )}
           >

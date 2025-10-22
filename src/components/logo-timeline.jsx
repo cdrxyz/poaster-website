@@ -39,7 +39,7 @@ export function LogoTimeline() {
             maskRepeat: 'no-repeat',
           }}
         />
-        <div className="relative flex size-24 items-center justify-center rounded-xl bg-linear-to-t from-white/5 to-white/25 shadow-sm ring-1 ring-white/10 outline outline-offset-[-5px] outline-white/5 ring-inset">
+        <div className="relative flex size-24 items-center justify-center rounded-xl bg-linear-to-t from-white/5 to-white/25 shadow-xs ring-1 ring-white/10 outline-solid outline-offset-[-5px] outline-white/5 ring-inset">
           <Mark className="h-9 fill-white" />
         </div>
       </div>

@@ -45,7 +45,7 @@ function Circles() {
 
 function MainLogo() {
   return (
-    <div className="absolute top-32 left-44 flex size-16 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+    <div className="absolute top-32 left-44 flex size-16 items-center justify-center rounded-full bg-white shadow-xs ring-1 ring-black/5">
       <Mark className="h-9 fill-black" />
     </div>
   )
@@ -72,7 +72,7 @@ function Logo({ src, left, top, hover }) {
       alt=""
       src={src}
       style={{ left, top }}
-      className="absolute size-16 rounded-full bg-white shadow-sm ring-1 ring-black/5"
+      className="absolute size-16 rounded-full bg-white shadow-xs ring-1 ring-black/5"
     />
   )
 }

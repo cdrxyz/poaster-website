@@ -35,7 +35,7 @@ export default function Login() {
                 type="email"
                 name="email"
                 className={clsx(
-                  'block w-full rounded-lg border border-transparent shadow-sm ring-1 ring-black/10',
+                  'block w-full rounded-lg border border-transparent shadow-xs ring-1 ring-black/10',
                   'px-[calc(--spacing(2)-1px)] py-[calc(--spacing(1.5)-1px)] text-base/6 sm:text-sm/6',
                   'data-focus:outline-2 data-focus:-outline-offset-1 data-focus:outline-black',
                 )}
@@ -48,7 +48,7 @@ export default function Login() {
                 type="password"
                 name="password"
                 className={clsx(
-                  'block w-full rounded-lg border border-transparent shadow-sm ring-1 ring-black/10',
+                  'block w-full rounded-lg border border-transparent shadow-xs ring-1 ring-black/10',
                   'px-[calc(--spacing(2)-1px)] py-[calc(--spacing(1.5)-1px)] text-base/6 sm:text-sm/6',
                   'data-focus:outline-2 data-focus:-outline-offset-1 data-focus:outline-black',
                 )}
@@ -59,7 +59,7 @@ export default function Login() {
                 <Checkbox
                   name="remember-me"
                   className={clsx(
-                    'group block size-4 rounded-sm border border-transparent shadow-sm ring-1 ring-black/10',
+                    'group block size-4 rounded-xs border border-transparent shadow-xs ring-1 ring-black/10',
                     'data-checked:bg-black data-checked:ring-black',
                     'data-focus:outline-2 data-focus:outline-offset-2 data-focus:outline-black',
                   )}

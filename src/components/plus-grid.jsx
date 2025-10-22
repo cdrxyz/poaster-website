@@ -36,7 +36,7 @@ export function PlusGridItem({ className = '', children }) {
       <PlusGridIcon placement="top right" />
       <PlusGridIcon
         placement="bottom left"
-        className="hidden group-first/item:group-last/row:block"
+        className="hidden group-last/row:group-first/item:block"
       />
       <PlusGridIcon
         placement="bottom right"

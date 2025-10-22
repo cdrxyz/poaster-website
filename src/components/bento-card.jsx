@@ -22,7 +22,7 @@ export function BentoCard({
       className={clsx(
         className,
         'group relative flex flex-col overflow-hidden rounded-lg',
-        'bg-white shadow-xs ring-1 ring-black/5',
+        'bg-white shadow-2xs ring-1 ring-black/5',
         'data-dark:bg-gray-800 data-dark:ring-white/15',
       )}
     >
