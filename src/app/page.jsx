@@ -45,7 +45,7 @@ function Hero() {
             We turn writers into poasters. You write long-form, we extract bangers and post them to X to grow your Substack faster.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="#">Get started</Button>
+            <Button href="#">Coming Soon...</Button>
             <Button variant="secondary" href="/pricing">
               See pricing
             </Button>
@@ -192,18 +192,18 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <main>
-        <Container className="mt-10">
-          <LogoCloud />
-        </Container>
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          <FeatureSection />
-          <BentoSection />
-        </div>
-        <DarkBentoSection />
-      </main>
-      <Testimonials />
-      <Footer />
+      {/*<main>*/}
+      {/*  <Container className="mt-10">*/}
+      {/*    <LogoCloud />*/}
+      {/*  </Container>*/}
+      {/*  <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">*/}
+      {/*    <FeatureSection />*/}
+      {/*    <BentoSection />*/}
+      {/*  </div>*/}
+      {/*  <DarkBentoSection />*/}
+      {/*</main>*/}
+      {/*<Testimonials />*/}
+      {/*<Footer />*/}
     </div>
   )
 }
