@@ -48,7 +48,7 @@ function Hero() {
             Grow your Substack faster, forever.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://x.com/PoasterApp" target="_blank">Follow on X for Updates</Button>
+            <Button href="https://x.com/PoasterApp" target="_blank">Follow on X for Beta Access</Button>
             {/*<Button variant="secondary" href="/pricing">*/}
             {/*  See pricing*/}
             {/*</Button>*/}
