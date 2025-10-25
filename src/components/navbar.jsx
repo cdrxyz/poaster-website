@@ -15,7 +15,8 @@ const links = [
   { href: '/pricing', label: 'Pricing' },
   // { href: '/company', label: 'Company' },
   // { href: '/blog', label: 'Blog' },
-  { href: 'https://my.poaster.app/session/new', label: 'Login' },
+  { href: 'https://my.poaster.app/dashboard', label: 'Login' },
+  { href: 'https://my.poaster.app/signup', label: 'Sign up' },
 ]
 
 function DesktopNav() {

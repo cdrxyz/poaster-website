@@ -16,22 +16,23 @@ import {
 
 export const metadata = {
   title: 'Pricing',
-  description: 'Companies all over the world have closed millions of deals with Radiant. Sign up today and start selling smarter.',
+  description: 'Start growing your Substack from as low as $1/month.',
 }
 
 const tiers = [
   {
-    name: 'Starter',
-    slug: 'starter',
-    description: 'Everything you need to start selling.',
-    priceMonthly: 99,
+    name: 'Basic',
+    slug: 'basic',
+    description: 'Anyone can afford to grow.',
+    priceMonthly: 1,
     href: '#',
     highlights: [
-      { description: 'Up to 3 team members' },
-      { description: 'Up to 5 deal progress boards' },
-      { description: 'Source leads from select platforms' },
-      { description: 'RadiantAI integrations', disabled: true },
-      { description: 'Competitor analysis', disabled: true },
+      { description: '1 Substack or Website' },
+      { description: '50 extracted quotes' },
+      { description: '1 connected social account' },
+      { description: 'Automatic scheduled post sending' },
+      { description: 'Standard Read More CTA', disabled: true },
+      { description: 'Powered by @PoasterApp', disabled: true },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 3 },
@@ -49,17 +50,18 @@ const tiers = [
     ],
   },
   {
-    name: 'Growth',
-    slug: 'growth',
-    description: 'All the extras for your growing team.',
-    priceMonthly: 149,
+    name: 'Standard',
+    slug: 'standard',
+    description: 'Professional grade growth engine.',
+    priceMonthly: 10,
     href: '#',
     highlights: [
-      { description: 'Up to 10 team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 50 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: '5 competitor analyses per month' },
+      { description: '3 Substacks or Websites' },
+      { description: '1k extracted quotes' },
+      { description: '10 connected social accounts' },
+      { description: 'Automatic scheduled post sending' },
+      { description: 'Custom Read More CTA' },
+      { description: 'Custom Branding, no "Powered by..."' },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 10 },
@@ -77,17 +79,19 @@ const tiers = [
     ],
   },
   {
-    name: 'Enterprise',
-    slug: 'enterprise',
-    description: 'Added flexibility to close deals at scale.',
+    name: 'Agency',
+    slug: 'agency',
+    description: 'Automated growth at scale.',
     priceMonthly: 299,
     href: '#',
     highlights: [
-      { description: 'Unlimited active team members' },
-      { description: 'Unlimited deal progress boards' },
-      { description: 'Source leads from over 100 verified platforms' },
-      { description: 'RadiantAI integrations' },
-      { description: 'Unlimited competitor analyses' },
+      { description: '100 Substacks or Websites' },
+      { description: '100k extracted quotes' },
+      { description: '500 connected social accounts' },
+      { description: 'Automatic scheduled post sending' },
+      { description: 'Custom Read More CTA' },
+      { description: 'Custom Branding, no "Powered by..."' },
+      { description: 'Premium Support' },
     ],
     features: [
       { section: 'Features', name: 'Accounts', value: 'Unlimited' },
@@ -109,10 +113,11 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Pricing that grows with your team size.</Heading>
+      <Heading as="h1">Grow your Substack, affordably.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Companies all over the world have closed millions of deals with Radiant.
-        Sign up today and start selling smarter.
+        No need to fork over $10k/month to an agency or army of VAs.<br/>
+        Poaster uses agentic AI to efficiently grow your Substack.<br/>
+        Starting at $1/month.
       </Lead>
     </Container>
   )
@@ -125,16 +130,16 @@ function PricingCards() {
       <Container className="relative">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {tiers.map((tier, tierIndex) => (
-            <PricingCard key={tierIndex} tier={tier} />
+            <PricingCard key={tierIndex} tierIndex={tierIndex} tier={tier} />
           ))}
         </div>
-        <LogoCloud className="mt-24" />
+        {/*<LogoCloud className="mt-24" />*/}
       </Container>
     </div>
   )
 }
 
-function PricingCard({ tier }) {
+function PricingCard({ tierIndex, tier }) {
   return (
     <div className="-m-2 grid grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
       <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
@@ -151,11 +156,11 @@ function PricingCard({ tier }) {
             </div>
           </div>
           <div className="mt-8">
-            <Button href={tier.href}>Start a free trial</Button>
+            <Button href={tier.href} variant={tierIndex !== 1 ? "secondary" : undefined}>Start a free trial</Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
-              Start selling with:
+              Start growing with:
             </h3>
             <ul className="mt-3 space-y-3">
               {tier.highlights.map((props, featureIndex) => (
@@ -376,15 +381,14 @@ function Testimonial() {
             <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
               <blockquote>
                 <p className="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-4xl">
-                  Thanks to Radiant, we&apos;re finding new leads that we never
-                  would have found with legal methods.
+                  With Poaster, I finally believe in the power of AI. Our Substack growth is way up, and I haven't had to do a thing. I'm still in shock.
                 </p>
               </blockquote>
               <figcaption className="mt-auto">
-                <p className="text-sm/6 font-medium text-white">Tina Yards</p>
+                <p className="text-sm/6 font-medium text-white">Janice Jacobs</p>
                 <p className="text-sm/6 font-medium">
                   <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-                    VP of Sales, Protocol
+                    Writer, Substack
                   </span>
                 </p>
               </figcaption>
@@ -488,9 +492,9 @@ export default function Pricing() {
       </Container>
       <Header />
       <PricingCards />
-      <PricingTable selectedTier={tier} />
+      {/*<PricingTable selectedTier={tier} />*/}
       <Testimonial />
-      <FrequentlyAskedQuestions />
+      {/*<FrequentlyAskedQuestions />*/}
       <Footer />
     </main>
   )

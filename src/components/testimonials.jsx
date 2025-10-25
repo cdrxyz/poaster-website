@@ -18,44 +18,44 @@ import { Heading, Subheading } from './text'
 const testimonials = [
   {
     img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
+    name: 'Janice Jacobs',
+    title: 'Writer, Substack',
     quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+      'I couldn\'t hype myself up to try socials again. But now with Poaster, paid subs are up 20%!',
   },
   {
     img: '/testimonials/conor-neville.jpg',
     name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
+    title: 'Writer, Substack',
     quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+      'All the other tools wanted me to write more, but I already do that on Substack. With Poaster, I didn\'t have to lift a finger!',
   },
   {
     img: '/testimonials/amy-chase.jpg',
     name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
+    title: 'Marketing, Podcast Host',
     quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+      'I run marketing for a dozen writers, Poaster has now let me save hours every week so I can take on more clients.',
   },
   {
     img: '/testimonials/veronica-winton.jpg',
     name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
+    title: 'Writer, Substack',
     quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+      'I always loved writing, but doing it online has been new for me. Poaster has helped me grow without forcing me to be on social media all the time.',
   },
   {
     img: '/testimonials/dillon-lenora.jpg',
     name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    title: 'Writer, Substack',
+    quote: 'With the growth since I started Poaster, I now make enough writing that I could quit my job!',
   },
   {
     img: '/testimonials/harriet-arron.jpg',
     name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
+    title: 'Marketing & Pastries, Peter Pan Bakery',
     quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+      'Scheduling posts was my least favorite part of the job, Poaster is crazy. I gave it our website, and it now posts good stuff a couple times per day. I can get back to baking!',
   },
 ]
 
@@ -147,12 +147,11 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
+        Join the fastest growing Substack writers using Poaster to grow their audience, without taking time away from writing.
       </p>
       <div className="mt-2">
         <Link
-          href="#"
+          href="https://my.poaster.app/signup"
           className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
         >
           Get started
@@ -185,7 +184,7 @@ export function Testimonials() {
         <div ref={setReferenceWindowRef}>
           <Subheading>What everyone is saying</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            Trusted by writers.
           </Heading>
         </div>
       </Container>

@@ -18,7 +18,7 @@ import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 export const metadata = {
   description:
-    'Radiant helps you sell more by revealing sensitive information about your customers.',
+    'Poaster uses AI to help writers grow their Substack.',
 }
 
 function Hero() {
@@ -42,7 +42,10 @@ function Hero() {
             Grow your Substack.
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
-            We turn writers into poasters. You write long-form, we extract bangers and post them to X to grow your Substack faster.
+            We turn writers into poasters.<br/>
+            You write long-form, we extract bangers and post them to X.
+            Signup in minutes.<br/>
+            Grow your Substack faster, forever.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
             <Button href="https://x.com/PoasterApp" target="_blank">Follow on X for Updates</Button>
@@ -79,7 +82,7 @@ function BentoSection() {
     <Container>
       <Subheading>Automated Growth</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        You already have everything you need. Let us do the rest.
+        You already wrote something incredible. We can do the rest.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
@@ -137,7 +140,7 @@ function DarkBentoSection() {
   return (
     <div className="mx-2 mt-2 rounded-4xl bg-gray-900 py-32">
       <Container>
-        <Subheading dark>Agentic AI</Subheading>
+        <Subheading dark>Agentic AI Working For You</Subheading>
         <Heading as="h3" dark className="mt-2 max-w-3xl">
           Automated social media growth, powered by AI agents.
         </Heading>
@@ -156,9 +159,9 @@ function DarkBentoSection() {
           />
           <BentoCard
             dark
-            eyebrow="Integrations"
-            title="..."
-            description="..."
+            eyebrow="Beyond Substack"
+            title="Extract from Any Website."
+            description="Poaster works with any website, not just Substack. Our AI agents can extract quotes and post them to social media from any blog or article you write."
             graphic={<LogoTimeline />}
             // `overflow-visible!` is needed to work around a Chrome bug that disables the mask on the graphic.
             className="z-10 overflow-visible! lg:col-span-2 lg:rounded-tr-4xl"
@@ -188,6 +191,27 @@ function DarkBentoSection() {
   )
 }
 
+function CallToAction() {
+  return (
+    <div className="bg-indigo-100">
+      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
+        <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          Ready to grow your Substack?
+          <br />
+          Start your free trial today.
+        </h2>
+        <div className="mt-10 px-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
+          <Button href="https://my.poaster.app/signup">I'm Ready.</Button>
+          {/*<a href="#" className="text-sm/6 font-semibold text-gray-900">*/}
+          {/*  Learn more*/}
+          {/*  <span aria-hidden="true">→</span>*/}
+          {/*</a>*/}
+        </div>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <div className="overflow-hidden">
@@ -197,9 +221,10 @@ export default function Home() {
         {/*  <LogoCloud />*/}
         {/*</Container>*/}
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
-          <FeatureSection />
+          {/*<FeatureSection />*/}
           <BentoSection />
         </div>
+        <CallToAction />
         <DarkBentoSection />
       </main>
       <Testimonials />
