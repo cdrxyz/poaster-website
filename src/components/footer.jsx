@@ -12,14 +12,13 @@ function CallToAction() {
       <hgroup>
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Ready to grow your Substack?
           <br />
           Start your free trial today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Starting from $1/month.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="#">
@@ -56,32 +55,32 @@ function Sitemap() {
         <SitemapHeading>Product</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/pricing">Pricing</SitemapLink>
-          <SitemapLink href="#">Analysis</SitemapLink>
-          <SitemapLink href="#">API</SitemapLink>
+          {/*<SitemapLink href="#">Analysis</SitemapLink>*/}
+          {/*<SitemapLink href="#">API</SitemapLink>*/}
         </SitemapLinks>
       </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Careers</SitemapLink>
-          <SitemapLink href="/blog">Blog</SitemapLink>
-          <SitemapLink href="/company">Company</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Support</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Help center</SitemapLink>
-          <SitemapLink href="#">Community</SitemapLink>
-        </SitemapLinks>
-      </div>
-      <div>
-        <SitemapHeading>Company</SitemapHeading>
-        <SitemapLinks>
-          <SitemapLink href="#">Terms of service</SitemapLink>
-          <SitemapLink href="#">Privacy policy</SitemapLink>
-        </SitemapLinks>
-      </div>
+      {/*<div>*/}
+      {/*  <SitemapHeading>Company</SitemapHeading>*/}
+      {/*  <SitemapLinks>*/}
+      {/*    <SitemapLink href="#">Careers</SitemapLink>*/}
+          {/*<SitemapLink href="/blog">Blog</SitemapLink>*/}
+          {/*<SitemapLink href="/company">Company</SitemapLink>*/}
+        {/*</SitemapLinks>*/}
+      {/*</div>*/}
+      {/*<div>*/}
+      {/*  <SitemapHeading>Support</SitemapHeading>*/}
+      {/*  <SitemapLinks>*/}
+      {/*    <SitemapLink href="#">Guide</SitemapLink>*/}
+      {/*    <SitemapLink href="#">Community</SitemapLink>*/}
+      {/*  </SitemapLinks>*/}
+      {/*</div>*/}
+      {/*<div>*/}
+      {/*  <SitemapHeading>Company</SitemapHeading>*/}
+      {/*  <SitemapLinks>*/}
+      {/*    <SitemapLink href="#">Terms of Service</SitemapLink>*/}
+      {/*    <SitemapLink href="#">Privacy Policy</SitemapLink>*/}
+      {/*  </SitemapLinks>*/}
+      {/*</div>*/}
     </>
   )
 }
@@ -159,20 +158,21 @@ export function Footer() {
       <Gradient className="relative mt-10">
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
-          {/*<CallToAction />*/}
+          <CallToAction />
           <PlusGrid className="pb-16">
-            {/*<PlusGridRow>*/}
-            {/*  <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">*/}
-            {/*    <div className="col-span-2 flex">*/}
-            {/*      <PlusGridItem className="pt-6 lg:pb-6">*/}
-            {/*        <Logo className="h-9" />*/}
-            {/*      </PlusGridItem>*/}
-            {/*    </div>*/}
-            {/*    <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">*/}
-            {/*      <Sitemap />*/}
-            {/*    </div>*/}
-            {/*  </div>*/}
-            {/*</PlusGridRow>*/}
+            <PlusGridRow>
+              <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
+                <div className="col-span-2 flex">
+                  <PlusGridItem className="pt-6 lg:pb-6 font-mono">
+                    {/*<Logo className="h-9" />*/}
+                    Poaster.App
+                  </PlusGridItem>
+                </div>
+                <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
+                  <Sitemap />
+                </div>
+              </div>
+            </PlusGridRow>
             <PlusGridRow className="flex justify-between">
               <div>
                 <PlusGridItem className="py-3">
