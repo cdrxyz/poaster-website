@@ -12,7 +12,7 @@ import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 
 const links = [
-  // { href: '/pricing', label: 'Pricing' },
+  { href: '/pricing', label: 'Pricing' },
   // { href: '/company', label: 'Company' },
   // { href: '/blog', label: 'Blog' },
   { href: 'https://my.poaster.app/session/new', label: 'Login' },
