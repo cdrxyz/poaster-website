@@ -83,9 +83,9 @@ export function Navbar({ banner }) {
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
-              <Link className="font-mono" href="/" title="Home">
-                Poaster.App
-                {/*<Logo className="h-9" />*/}
+              <Link className="flex ailgn-middle" href="/" title="Home">
+                <Logo className="h-32" />
+                {/*<span className="text-2xl font-extrabold">Poaster</span>*/}
               </Link>
             </PlusGridItem>
             {banner && (
