@@ -29,10 +29,10 @@ function Hero() {
         <Navbar
           banner={
             <Link
-              href="/blog/radiant-raises-100m-series-a-from-tailwind-ventures"
+              href="/pricing"
               className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
             >
-              Launching in Beta Soon...
+              Poaster is now in Public Beta
               <ChevronRightIcon className="size-4" />
             </Link>
           }
@@ -43,15 +43,14 @@ function Hero() {
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             We turn writers into poasters.<br/>
-            You write long-form, we extract bangers and post them to X.
-            Signup in minutes.<br/>
-            Grow your Substack faster, forever.
+            You write long-form articles, we extract bangers and post them to your social media.<br/>
+            Signup in minutes. Grow your Substack forever.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
-            <Button href="https://x.com/PoasterApp" target="_blank">Follow on X for Beta Access</Button>
-            {/*<Button variant="secondary" href="/pricing">*/}
-            {/*  See pricing*/}
-            {/*</Button>*/}
+            <Button href="https://my.poaster.app/signup" target="_blank">Get started</Button>
+            <Button variant="secondary" href="/pricing">
+              See pricing
+            </Button>
           </div>
         </div>
       </Container>
