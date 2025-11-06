@@ -115,9 +115,9 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Grow your Substack, affordably.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        No need to fork over $10k/month to an agency or army of VAs.<br/>
+        No need to blow $5000/month on an agency or army of VAs.<br/>
         Poaster uses agentic AI to efficiently grow your Substack.<br/>
-        Starting at $1/month.
+        Starting from just $1/month.
       </Lead>
     </Container>
   )
@@ -156,7 +156,7 @@ function PricingCard({ tierIndex, tier }) {
             </div>
           </div>
           <div className="mt-8">
-            <Button href={tier.href} variant={tierIndex !== 1 ? "secondary" : undefined}>Start a free trial</Button>
+            <Button href={tier.href} variant={tierIndex !== 1 ? "secondary" : undefined}>Get started</Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">

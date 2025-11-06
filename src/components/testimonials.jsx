@@ -147,7 +147,7 @@ function CallToAction() {
   return (
     <div>
       <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the fastest growing Substack writers using Poaster to grow their audience, without taking time away from writing.
+        Join the Substack writers & marketers using Poaster to grow their audience, without taking time away from writing.
       </p>
       <div className="mt-2">
         <Link
