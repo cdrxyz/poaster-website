@@ -9,34 +9,30 @@ import { Heading, Lead, Subheading } from '@/components/text'
 export const metadata = {
   title: 'Company',
   description:
-    'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
+    'Writers helping writers.',
 }
 
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+      <Heading as="h1">Writers helping writers.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        We’re on a mission to transform revenue organizations by harnessing vast
-        amounts of illegally acquired customer data.
+        Founded by writers and cracked software engineeers to help grow your Substack.
       </Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
-          <h2 className="text-2xl font-medium tracking-tight">Our mission</h2>
+          <h2 className="text-2xl font-medium tracking-tight">Let your writing do the marketing</h2>
           <p className="mt-6 text-sm/6 text-gray-600">
-            At Radiant, we are dedicated to transforming the way revenue
-            organizations source and close deals. Our mission is to provide our
-            customers with an unfair advantage over both their competitors and
-            potential customers through insight and analysis. We’ll stop at
-            nothing to get you the data you need to close a deal.
+            At Poaster, we believe that writers should focus on what they do best:
+            writing. Our mission is to empower writers to grow their audience
+            without taking time away from their craft. By leveraging AI technology,
+            we help writers extract viral quotes from their long-form articles
+            and automatically post it to their social media platforms. Growth can be effortless.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            We’re customer-obsessed — putting the time in to build a detailed
-            financial picture of every one of our customers so that we know more
-            about your business than you do. We are in this together, mostly
-            because we are all implicated in large-scale financial crime. In our
-            history as a company, we’ve never lost a customer, because if any
-            one of us talks, we all go down.
+            Founded by a team of passionate writers and cracked software engineers,
+            Poaster is dedicated to providing innovative solutions that make it
+            easier for writers to engage with their readers and grow their Substack.
           </p>
         </div>
         <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
@@ -72,31 +68,31 @@ function Header() {
           </div>
         </div>
         <div className="max-lg:mt-16 lg:col-span-1">
-          <Subheading>The Numbers</Subheading>
+          <Subheading>Early Results</Subheading>
           <hr className="mt-6 border-t border-gray-200" />
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
+              <dt className="text-sm/6 text-gray-600">Revenue Growth Lift</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                $<AnimatedNumber start={100} end={150} />M
+                <AnimatedNumber start={1} end={46} />%
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
+              <dt className="text-sm/6 text-gray-600">Trial Length</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={15} end={30} />K
+                <AnimatedNumber start={1} end={15} /> days
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
+              <dt className="text-sm/6 text-gray-600">Paid Subscriber Growth Lift</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
+                <AnimatedNumber start={1} end={23} />%
               </dd>
             </div>
             <div className="flex flex-col gap-y-2">
-              <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
+              <dt className="text-sm/6 text-gray-600">Free Subscriber Growth Lift</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
-                <AnimatedNumber start={150} end={200} />M
+                <AnimatedNumber start={1} end={7} />%
               </dd>
             </div>
           </dl>
@@ -226,84 +222,81 @@ function Investors() {
     <Container className="mt-32">
       <Subheading>Investors</Subheading>
       <Heading as="h3" className="mt-2">
-        Funded by industry-leaders.
+        We only report to our customers.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        We are fortunate to be backed by the best investors in the industry —
-        both literal and metaphorical partners in crime.
+        Self-funded, no investors, we only report to our customers.
       </Lead>
-      <Subheading as="h3" className="mt-24">
-        Venture Capital
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
+      {/*<Subheading as="h3" className="mt-24">*/}
+      {/*  Venture Capital*/}
+      {/*</Subheading>*/}
+      {/*<hr className="mt-6 border-t border-gray-200" />*/}
       <ul
         role="list"
         className="mx-auto mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2"
       >
         <li>
-          <img
-            alt="Remington Schwartz"
-            src="/investors/remington-schwartz.svg"
-            className="h-14"
-          />
+          {/*<img*/}
+          {/*  alt="Remington Schwartz"*/}
+          {/*  src="/investors/remington-schwartz.svg"*/}
+          {/*  className="h-14"*/}
+          {/*/>*/}
           <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
-            Remington Schwartz has been a driving force in the tech industry,
-            backing bold entrepreneurs who explore grey areas in financial and
-            privacy law. Their deep industry expertise and extensive political
-            lobbying provide their portfolio companies with favorable regulation
-            and direct access to lawmakers.
+            Poaster is self-funded, built initially to help a single Substack writer.
+            Now, offering the same tools that worked for him to any Substack author or
+            small business marketing team looking to grow their audience without extra effort.
           </p>
         </li>
-        <li>
-          <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />
-          <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
-            Deccel has been at the forefront of innovation, investing in
-            pioneering companies across various sectors, including technology,
-            consumer goods, and healthcare. Their philosophy of ‘plausible
-            deniability’ and dedication to looking the other way have helped
-            produce some of the world’s most controversial companies.
-          </p>
-        </li>
+        {/*<li>*/}
+        {/*  <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />*/}
+        {/*  <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
+        {/*    Deccel has been at the forefront of innovation, investing in*/}
+        {/*    pioneering companies across various sectors, including technology,*/}
+        {/*    consumer goods, and healthcare. Their philosophy of ‘plausible*/}
+        {/*    deniability’ and dedication to looking the other way have helped*/}
+        {/*    produce some of the world’s most controversial companies.*/}
+        {/*  </p>*/}
+        {/*</li>*/}
       </ul>
-      <Subheading as="h3" className="mt-24">
-        Individual investors
-      </Subheading>
-      <hr className="mt-6 border-t border-gray-200" />
-      <ul
-        role="list"
-        className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <Person
-          name="Kristin Watson"
-          description="TechNexus Ventures"
-          img="/individual-investors/kristin-watson.jpg"
-        />
-        <Person
-          name="Emma Dorsey"
-          description="Innovate Capital Partners"
-          img="/individual-investors/emma-dorsey.jpg"
-        />
-        <Person
-          name="Alicia Bell"
-          description="FutureWave Investments"
-          img="/individual-investors/alicia-bell.jpg"
-        />
-        <Person
-          name="Jenny Wilson"
-          description="SynergyTech Equity"
-          img="/individual-investors/jenny-wilson.jpg"
-        />
-        <Person
-          name="Anna Roberts"
-          description="NextGen Horizons"
-          img="/individual-investors/anna-roberts.jpg"
-        />
-        <Person
-          name="Benjamin Russel"
-          description="Pioneer Digital Ventures"
-          img="/individual-investors/benjamin-russel.jpg"
-        />
-      </ul>
+      {/*<Subheading as="h3" className="mt-24">*/}
+      {/*  Individual investors*/}
+      {/*</Subheading>*/}
+      {/*<hr className="mt-6 border-t border-gray-200" />*/}
+      {/*<ul*/}
+      {/*  role="list"*/}
+      {/*  className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"*/}
+      {/*>*/}
+      {/*  <Person*/}
+      {/*    name="Kristin Watson"*/}
+      {/*    description="TechNexus Ventures"*/}
+      {/*    img="/individual-investors/kristin-watson.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Emma Dorsey"*/}
+      {/*    description="Innovate Capital Partners"*/}
+      {/*    img="/individual-investors/emma-dorsey.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Alicia Bell"*/}
+      {/*    description="FutureWave Investments"*/}
+      {/*    img="/individual-investors/alicia-bell.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Jenny Wilson"*/}
+      {/*    description="SynergyTech Equity"*/}
+      {/*    img="/individual-investors/jenny-wilson.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Anna Roberts"*/}
+      {/*    description="NextGen Horizons"*/}
+      {/*    img="/individual-investors/anna-roberts.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Benjamin Russel"*/}
+      {/*    description="Pioneer Digital Ventures"*/}
+      {/*    img="/individual-investors/benjamin-russel.jpg"*/}
+      {/*  />*/}
+      {/*</ul>*/}
     </Container>
   )
 }
@@ -455,9 +448,9 @@ export default function Company() {
         <Navbar />
       </Container>
       <Header />
-      <Team />
+      {/*<Team />*/}
       <Investors />
-      <Careers />
+      {/*<Careers />*/}
       <Footer />
     </main>
   )

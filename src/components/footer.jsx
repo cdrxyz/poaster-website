@@ -13,16 +13,14 @@ function CallToAction() {
         <Subheading>Get started</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
           Ready to grow your Substack?
-          <br />
-          Start your free trial today.
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Starting from $1/month.
+        Starting from just $1/month.
       </p>
       <div className="mt-6">
         <Button className="w-full sm:w-auto" href="#">
-          Get started
+          I'm Ready
         </Button>
       </div>
     </div>
@@ -59,14 +57,14 @@ function Sitemap() {
           {/*<SitemapLink href="#">API</SitemapLink>*/}
         </SitemapLinks>
       </div>
-      {/*<div>*/}
-      {/*  <SitemapHeading>Company</SitemapHeading>*/}
-      {/*  <SitemapLinks>*/}
+      <div>
+        <SitemapHeading>Company</SitemapHeading>
+        <SitemapLinks>
       {/*    <SitemapLink href="#">Careers</SitemapLink>*/}
           {/*<SitemapLink href="/blog">Blog</SitemapLink>*/}
-          {/*<SitemapLink href="/company">Company</SitemapLink>*/}
-        {/*</SitemapLinks>*/}
-      {/*</div>*/}
+          <SitemapLink href="/company">Company</SitemapLink>
+        </SitemapLinks>
+      </div>
       {/*<div>*/}
       {/*  <SitemapHeading>Support</SitemapHeading>*/}
       {/*  <SitemapLinks>*/}
@@ -113,6 +111,14 @@ function SocialIconLinkedIn(props) {
   )
 }
 
+function SocialIconEmail(props) {
+  return (
+    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+    </svg>
+  )
+}
+
 function SocialLinks() {
   return (
     <>
@@ -132,6 +138,14 @@ function SocialLinks() {
       >
         <SocialIconX className="size-4" />
       </Link>
+      <Link
+        href="mailto:hello@poaster.app"
+        target="_blank"
+        aria-label="Send us an email"
+        className="text-gray-950 data-hover:text-gray-950/75"
+      >
+        <SocialIconEmail className="size-4" />
+      </Link>
       {/*<Link*/}
       {/*  href="https://linkedin.com"*/}
       {/*  target="_blank"*/}
@@ -148,6 +162,7 @@ function Copyright() {
   return (
     <div className="text-sm/6 text-gray-950">
       &copy; {new Date().getFullYear()} Poaster App. All rights reserved.
+      <br/>Testimonial names may be anonymized for privacy.
     </div>
   )
 }
@@ -163,9 +178,9 @@ export function Footer() {
             <PlusGridRow>
               <div className="grid grid-cols-2 gap-y-10 pb-6 lg:grid-cols-6 lg:gap-8">
                 <div className="col-span-2 flex">
-                  <PlusGridItem className="pt-6 lg:pb-6 font-mono">
-                    {/*<Logo className="h-9" />*/}
-                    Poaster.App
+                  <PlusGridItem className="pt-6 lg:pb-6 font-mono flex">
+                    <Logo className="h-32" />
+                    <span className="text-2xl font-mono">Poaster</span>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
