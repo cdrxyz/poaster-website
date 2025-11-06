@@ -65,13 +65,13 @@ function Sitemap() {
           <SitemapLink href="/company">Company</SitemapLink>
         </SitemapLinks>
       </div>
-      {/*<div>*/}
-      {/*  <SitemapHeading>Support</SitemapHeading>*/}
-      {/*  <SitemapLinks>*/}
-      {/*    <SitemapLink href="#">Guide</SitemapLink>*/}
-      {/*    <SitemapLink href="#">Community</SitemapLink>*/}
-      {/*  </SitemapLinks>*/}
-      {/*</div>*/}
+      <div>
+        <SitemapHeading>Support</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="https://poaster.userjot.com/">Feature Requests & Roadmap</SitemapLink>
+          <SitemapLink href="https://status.poaster.app/">Status</SitemapLink>
+        </SitemapLinks>
+      </div>
       {/*<div>*/}
       {/*  <SitemapHeading>Company</SitemapHeading>*/}
       {/*  <SitemapLinks>*/}

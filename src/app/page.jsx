@@ -43,7 +43,9 @@ function Hero() {
           </h1>
           <p className="mt-8 max-w-lg text-xl/7 font-medium text-gray-950/75 sm:text-2xl/8">
             We turn writers into poasters.<br/>
-            You write long-form articles, we extract bangers and post them to your social media.<br/>
+            <br/>
+            You publish long-form articles. We use AI to mine viral quotes and post them automatically.<br/>
+            <br/>
             Signup in minutes. Grow your Substack forever.
           </p>
           <div className="mt-12 flex flex-col gap-x-6 gap-y-4 sm:flex-row">
@@ -81,10 +83,11 @@ function BentoSection() {
     <Container>
       <Subheading>Automated Growth</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        You already wrote something incredible. We can do the rest.
+        You already wrote a lot.<br/>Let us worry about the posting.
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        {/* Use substack-growth-h.png here instead */}
         <BentoCard
           eyebrow="Analysis"
           title="Use What Works: Your Voice"
@@ -97,10 +100,10 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Smart Quotes"
-          title="Our Agents Bring Out Your Best"
+          title="Our AI Agents Bring Out Your Best"
           description="Some writers are told to trash their social media accounts with AI slop to grow. It's not. Our AI agents choose the best quotes and selections from your long-form articles. Your feed remains purely in your voice. Always."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-size-[1000px_560px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/screenshots/website-substack-review.png)] bg-size-[2330px_1700px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -196,15 +199,13 @@ function CallToAction() {
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
         <h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
           Ready to grow your Substack?
-          <br />
-          Start your free trial today.
         </h2>
         <div className="mt-10 px-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
           <Button href="https://my.poaster.app/signup">I'm Ready.</Button>
-          {/*<a href="#" className="text-sm/6 font-semibold text-gray-900">*/}
-          {/*  Learn more*/}
-          {/*  <span aria-hidden="true">→</span>*/}
-          {/*</a>*/}
+          <a href="/pricing" className="text-sm/6 font-semibold text-gray-900">
+            Plans
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </div>
