@@ -28,7 +28,7 @@ const tiers = [
     href: '#',
     highlights: [
       { description: '1 Substack or Website' },
-      { description: '50 extracted quotes' },
+      { description: '10 extracted quotes (at a time)' },
       { description: '1 connected social account' },
       { description: 'Automatic scheduled post sending' },
       { description: 'Standard Read More CTA', disabled: true },
