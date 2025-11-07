@@ -93,15 +93,16 @@ function BentoSection() {
           title="Use What Works: Your Voice"
           description="Your readers already love your writing, so give the people what they want. We automate your social media growth so your words go farther, and your Substack revenue & subscriber count goes up."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-size-[1100px_650px] bg-position-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/screenshots/substack-growth-h.png)] bg-size-[500px_400px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
+            {/*<div className="h-80 bg-[url(/screenshots/substack-growth-h.png)] bg-size-[2330px_1700px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />*/}
         <BentoCard
           eyebrow="Smart Quotes"
           title="Our AI Agents Bring Out Your Best"
-          description="Some writers are told to trash their social media accounts with AI slop to grow. It's not. Our AI agents choose the best quotes and selections from your long-form articles. Your feed remains purely in your voice. Always."
+          description="Some writers flood their social media accounts with AI slop to grow. But, it doesn't work. Our AI agents choose the best quotes and selections from your long-form articles. Your feed remains purely in your voice. Always."
           graphic={
             <div className="h-80 bg-[url(/screenshots/website-substack-review.png)] bg-size-[2330px_1700px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
           }
@@ -129,7 +130,7 @@ function BentoSection() {
         <BentoCard
           eyebrow="Scheduled Posts"
           title="Be the Poaster, Without Doing any Posting"
-          description="Choose your own custom posting schedule so your feeds are always fresh with your quotes and long-form articles. "
+          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world awwait."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -154,7 +155,7 @@ function DarkBentoSection() {
             title="Agents that find the viral quotes you already wrote"
             description="Our AI Agents are trained to choose the best quotes which will go viral and grow your Substack when posted on social media."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/networking.png)] bg-size-[851px_344px] bg-no-repeat" />
+              <div className="h-80 bg-[url(/screenshots/website-substack-review.png)] bg-size-[1165px_850px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -182,7 +183,7 @@ function DarkBentoSection() {
             title="Set up once. Even for articles you haven't written yet."
             description="Setup only takes minutes, and even includes future articles you haven't yet published. Just add our custom email as a paid subscriber to your Substack and we'll handle the rest."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/engagement.png)] bg-size-[851px_344px] bg-no-repeat" />
+              <div className="h-80 bg-[url(/screenshots/website-settings.png)] bg-size-[750px_550px] bg-no-repeat" />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"

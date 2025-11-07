@@ -68,17 +68,19 @@ function Sitemap() {
       <div>
         <SitemapHeading>Support</SitemapHeading>
         <SitemapLinks>
-          <SitemapLink href="https://poaster.userjot.com/">Feature Requests & Roadmap</SitemapLink>
+          <SitemapLink href="https://poaster.userjot.com/board/all" target="_blank">Feature Requests</SitemapLink>
+          <SitemapLink href="https://poaster.userjot.com/roadmap" target="_blank">Roadmap</SitemapLink>
+          <SitemapLink href="https://poaster.userjot.com/updates" target="_blank">Changelog</SitemapLink>
           <SitemapLink href="https://status.poaster.app/">Status</SitemapLink>
         </SitemapLinks>
       </div>
-      {/*<div>*/}
-      {/*  <SitemapHeading>Company</SitemapHeading>*/}
-      {/*  <SitemapLinks>*/}
-      {/*    <SitemapLink href="#">Terms of Service</SitemapLink>*/}
-      {/*    <SitemapLink href="#">Privacy Policy</SitemapLink>*/}
-      {/*  </SitemapLinks>*/}
-      {/*</div>*/}
+      <div>
+        <SitemapHeading>Company</SitemapHeading>
+        <SitemapLinks>
+          <SitemapLink href="/terms">Terms of Service</SitemapLink>
+          <SitemapLink href="/privacy">Privacy Policy</SitemapLink>
+        </SitemapLinks>
+      </div>
     </>
   )
 }
@@ -180,7 +182,7 @@ export function Footer() {
                 <div className="col-span-2 flex">
                   <PlusGridItem className="pt-6 lg:pb-6 font-mono flex">
                     <Logo className="h-32" />
-                    <span className="text-2xl font-mono">Poaster</span>
+                    <span className="text-2xl font-extrabold mt-2">Poaster</span>
                   </PlusGridItem>
                 </div>
                 <div className="col-span-2 grid grid-cols-2 gap-x-8 gap-y-12 lg:col-span-4 lg:grid-cols-subgrid lg:pt-6">
