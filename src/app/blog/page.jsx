@@ -26,7 +26,7 @@ import { notFound } from 'next/navigation'
 export const metadata = {
   title: 'Blog',
   description:
-    'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
+    'Stay informed with Poaster product updates, company news, and insights on how to grow your Substack.',
 }
 
 const postsPerPage = 5
@@ -270,11 +270,11 @@ export default async function Blog() {
         <Navbar />
         <Subheading className="mt-16">Blog</Subheading>
         <Heading as="h1" className="mt-2">
-          What’s happening at Radiant.
+          What’s happening at Poaster.
         </Heading>
         <Lead className="mt-6 max-w-3xl">
           Stay informed with product updates, company news, and insights on how
-          to sell smarter at your company.
+          to grow your Substack.
         </Lead>
       </Container>
       {page === 1 && !category && <FeaturedPosts />}
