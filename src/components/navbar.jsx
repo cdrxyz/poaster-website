@@ -10,6 +10,7 @@ import { motion } from 'framer-motion'
 import { Link } from './link'
 import { Logo } from './logo'
 import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
+import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 const links = [
   { href: '/pricing', label: 'Pricing' },
@@ -83,14 +84,24 @@ export function Navbar({ banner }) {
         <PlusGridRow className="relative flex justify-between">
           <div className="relative flex gap-6">
             <PlusGridItem className="py-3">
-              <Link className="flex ailgn-middle" href="/" title="Home">
+              <Link className="ailgn-middle flex" href="/" title="Home">
                 <Logo className="h-32" />
-                <span className="text-2xl font-extrabold mt-2">Poaster</span>
+                <span className="mt-2 text-2xl font-extrabold">Poaster</span>
               </Link>
             </PlusGridItem>
-            {banner && (
+            {banner ? (
               <div className="relative hidden items-center py-3 lg:flex">
                 {banner}
+              </div>
+            ) : (
+              <div className="relative hidden items-center py-3 lg:flex">
+                <Link
+                  href="/blog/2025-11-07-public-beta"
+                  className="flex items-center gap-1 rounded-full bg-fuchsia-950/35 px-3 py-0.5 text-sm/6 font-medium text-white data-hover:bg-fuchsia-950/30"
+                >
+                  Poaster is now in Public Beta
+                  <ChevronRightIcon className="size-4" />
+                </Link>
               </div>
             )}
           </div>
