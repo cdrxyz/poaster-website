@@ -16,7 +16,7 @@ import { Heading, Subheading } from '@/components/text'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 export const metadata = {
-  description: 'Poaster uses AI to help writers grow their Substack.',
+  description: 'Poaster uses AI to help writers grow their Substack. Start for free.',
 }
 
 function Hero() {
@@ -125,7 +125,7 @@ function BentoSection() {
         <BentoCard
           eyebrow="Scheduled Posts"
           title="Be the Poaster, Without Doing any Posting"
-          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world awwait."
+          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world await."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />

@@ -17,7 +17,7 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Writers helping writers.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Founded by writers and cracked software engineeers to help grow your Substack.
+        Founded by writers and engineers to help grow your Substack.
       </Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
@@ -30,7 +30,7 @@ function Header() {
             and automatically post it to their social media platforms. Growth can be effortless.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Founded by a team of passionate writers and cracked software engineers,
+            Founded by a team of passionate writers and software engineers,
             Poaster is dedicated to providing innovative solutions that make it
             easier for writers to engage with their readers and grow their Substack.
           </p>
@@ -122,26 +122,23 @@ function Team() {
         Founded by an all-star team.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        Radiant is founded by two of the best sellers in the business and backed
-        by investors who look the other way.
+        Poaster is built by writers and engineers who believe creators deserve powerful tools without agency price tags.
       </Lead>
       <div className="mt-12 grid grid-cols-1 gap-12 lg:grid-cols-2">
         <div className="max-w-lg">
           <p className="text-sm/6 text-gray-600">
-            Years ago, while working as sales associates at rival companies,
-            Thomas, Ben, and Natalie were discussing a big client they had all
-            been competing for. Joking about seeing the terms of each other’s
-            offers, they had an idea: what if they shared data to win deals and
-            split the commission behind their companies’ backs? It turned out to
-            be an incredible success, and that idea became the kernel for
-            Radiant.
+            Poaster started as an internal tool built to solve a real problem: a
+            Substack writer was publishing great long-form content, but nobody
+            was seeing it. Posting manually to social media was time-consuming
+            and felt inauthentic. So we built an AI agent to do it automatically—
+            pulling the best quotes from every article and distributing them
+            across platforms on a consistent schedule.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
-            Today, Radiant transforms revenue organizations by harnessing
-            illegally acquired customer and competitor data, using it to provide
-            extraordinary leverage. More than 30,000 companies rely on Radiant
-            to undercut their competitors and extort their customers, all
-            through a single integrated platform.
+            The results were immediate. Subscriber counts climbed. Revenue
+            followed. So we opened Poaster up to other writers. Today, creators
+            and marketing teams around the world use Poaster to grow their
+            audience without sacrificing time or creative energy.
           </p>
           <div className="mt-6">
             <Button className="w-full sm:w-auto" href="#">
@@ -315,16 +312,17 @@ function Testimonial() {
       />
       <figure className="relative p-10">
         <blockquote>
-          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”']">
-            We&apos;ve managed to put two of our main competitors out of
-            business in 6 months.
+          <p className="relative text-xl/7 text-white before:absolute before:-translate-x-full before:content-['\u201c'] after:absolute after:content-['\u201d']">
+            I run marketing for a dozen writers. Poaster has saved me hours every
+            week so I can take on more clients and focus on strategy instead of
+            scheduling.
           </p>
         </blockquote>
         <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">Veronica Winton</p>
+          <p className="text-sm/6 font-medium text-white">Amy Chase</p>
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              CSO, Planeteria
+              Marketing & Podcast Host
             </span>
           </p>
         </figcaption>
@@ -341,8 +339,8 @@ function Careers() {
         Join our fully remote team.
       </Heading>
       <Lead className="mt-6 max-w-3xl">
-        We work together from all over the world, mainly from locations without
-        extradition agreements.
+        We work together from all over the world. Fully remote, async-friendly,
+        and focused on helping writers grow.
       </Lead>
       <div className="mt-24 grid grid-cols-1 gap-16 lg:grid-cols-[1fr_24rem]">
         <div className="lg:max-w-2xl">
