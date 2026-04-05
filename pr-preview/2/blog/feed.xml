@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>The Poaster Blog</title>
+        <title>The Radiant Blog</title>
         <link>https://poaster.app</link>
-        <description>Stay informed with Poaster product updates, company news, and insights on how to grow your Substack.</description>
-        <lastBuildDate>Sun, 05 Apr 2026 04:09:19 GMT</lastBuildDate>
+        <description>Stay informed with product updates, company news, and insights on how to sell smarter at your company.</description>
+        <lastBuildDate>Sun, 05 Apr 2026 04:10:19 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>The Poaster Blog</title>
+            <title>The Radiant Blog</title>
             <url>https://poaster.app/favicon.ico</url>
             <link>https://poaster.app</link>
         </image>
