@@ -16,11 +16,11 @@ function CallToAction() {
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Starting from just $1/month.
+        Start for free. Upgrade when you&apos;re ready.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          I'm Ready
+        <Button className="w-full sm:w-auto" href="https://my.poaster.app/signup">
+          Get started free
         </Button>
       </div>
     </div>
@@ -75,7 +75,7 @@ function Sitemap() {
         </SitemapLinks>
       </div>
       <div>
-        <SitemapHeading>Company</SitemapHeading>
+        <SitemapHeading>Legal</SitemapHeading>
         <SitemapLinks>
           <SitemapLink href="/terms">Terms of Service</SitemapLink>
           <SitemapLink href="/privacy">Privacy Policy</SitemapLink>
