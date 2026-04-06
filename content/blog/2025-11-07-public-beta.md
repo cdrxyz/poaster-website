@@ -71,17 +71,15 @@ Poaster is packed with features designed to maximize your Substack's reach:
 
 ## Pricing Plans
 
-We believe growth should be affordable. That's why we offer a free plan with no credit card required:
+We believe growth should be affordable. That's why we offer a Basic plan for just $1:
 
-- **Free**: 3 AI posts/week, 1 social account. Start growing right away.
+- **Basic ($1/month)**: 1 Substack or Website, 10 extracted quotes at a time, 1 connected social account, automatic scheduled post sending.
 
-- **Writer ($9/month)**: 50 posts/month, 1 website, 3 social accounts, no "@PoasterApp" watermark.
+- **Starter ($10/month)**: 3 Substacks or Websites, 1,000 extracted quotes, 10 connected social accounts, automatic scheduled post sending, custom Read More CTA, and custom branding with no "Powered by" watermark.
 
-- **Pro ($29/month)**: 500 posts/month, 5 websites, 10 social accounts, custom branding, and analytics.
+- **Agency ($299/month)**: 100 Substacks or Websites, 100,000 extracted quotes, 500 connected social accounts, automatic scheduled post sending, custom branding, white-label, and premium support.
 
-- **Agency ($199/month)**: Unlimited posts, 50 websites, 100 accounts, priority support, and white-label.
-
-All paid plans include automatic scheduling and priority support on higher tiers.
+All plans include automatic scheduling and higher tiers unlock custom branding and priority support.
 
 ## Join the Beta
 
