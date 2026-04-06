@@ -16,25 +16,25 @@ import {
 
 export const metadata = {
   title: 'Pricing',
-  description: 'Start growing your Substack for free. Plans from $9/month when you\'re ready to scale.',
+  description: 'Grow your Substack with AI. Plans from $1/month. Starter at $10. Agency at $299.',
 }
 
 const tiers = [
   {
-    name: 'Free',
-    slug: 'free',
-    description: 'Get started and see real growth — no credit card needed.',
-    priceMonthly: 0,
+    name: 'Basic',
+    slug: 'basic',
+    description: 'Get started and grow your Substack.',
+    priceMonthly: 1,
     href: 'https://my.poaster.app/signup',
     highlights: [
-      { description: '3 AI posts/week' },
-      { description: '1 social account' },
-      { description: '"Posted via @PoasterApp" watermark', disabled: true },
-      { description: 'No connected websites', disabled: true },
+      { description: '1 Substack or Website' },
+      { description: '10 extracted quotes at a time' },
+      { description: '1 connected social account' },
+      { description: 'Automatic scheduled post sending' },
     ],
     features: [
-      { section: 'Posting', name: 'AI posts per month', value: '~12' },
-      { section: 'Posting', name: 'Connected websites', value: 0 },
+      { section: 'Posting', name: 'AI posts per month', value: 'Unlimited' },
+      { section: 'Posting', name: 'Connected websites', value: 1 },
       { section: 'Posting', name: 'Social accounts', value: 1 },
       { section: 'Posting', name: 'No "@PoasterApp" watermark', value: false },
       { section: 'Posting', name: 'Custom branding', value: false },
@@ -48,23 +48,24 @@ const tiers = [
     ],
   },
   {
-    name: 'Writer',
-    slug: 'writer',
+    name: 'Starter',
+    slug: 'starter',
     description: 'For writers serious about growing their audience.',
-    priceMonthly: 9,
+    priceMonthly: 10,
     href: 'https://my.poaster.app/signup',
     highlights: [
-      { description: '50 posts/month' },
-      { description: '1 website' },
-      { description: '3 social accounts' },
-      { description: 'No watermark' },
+      { description: '3 Substacks or Websites' },
+      { description: '1,000 extracted quotes' },
+      { description: '10 connected social accounts' },
+      { description: 'Custom Read More CTA' },
+      { description: 'Custom branding, no "Powered by..."' },
     ],
     features: [
-      { section: 'Posting', name: 'AI posts per month', value: 50 },
-      { section: 'Posting', name: 'Connected websites', value: 1 },
-      { section: 'Posting', name: 'Social accounts', value: 3 },
+      { section: 'Posting', name: 'AI posts per month', value: 'Unlimited' },
+      { section: 'Posting', name: 'Connected websites', value: 3 },
+      { section: 'Posting', name: 'Social accounts', value: 10 },
       { section: 'Posting', name: 'No "@PoasterApp" watermark', value: true },
-      { section: 'Posting', name: 'Custom branding', value: false },
+      { section: 'Posting', name: 'Custom branding', value: true },
       { section: 'Publishing', name: 'Custom post schedule', value: true },
       { section: 'Publishing', name: 'Auto-approve new articles', value: true },
       { section: 'Analytics', name: 'Growth dashboard', value: false },
@@ -75,50 +76,22 @@ const tiers = [
     ],
   },
   {
-    name: 'Pro',
-    slug: 'pro',
-    description: 'For professional writers and content teams.',
-    priceMonthly: 29,
-    href: 'https://my.poaster.app/signup',
-    highlights: [
-      { description: '500 posts/month' },
-      { description: '5 websites' },
-      { description: '10 social accounts' },
-      { description: 'Custom branding' },
-      { description: 'Analytics dashboard' },
-    ],
-    features: [
-      { section: 'Posting', name: 'AI posts per month', value: 500 },
-      { section: 'Posting', name: 'Connected websites', value: 5 },
-      { section: 'Posting', name: 'Social accounts', value: 10 },
-      { section: 'Posting', name: 'No "@PoasterApp" watermark', value: true },
-      { section: 'Posting', name: 'Custom branding', value: true },
-      { section: 'Publishing', name: 'Custom post schedule', value: true },
-      { section: 'Publishing', name: 'Auto-approve new articles', value: true },
-      { section: 'Analytics', name: 'Growth dashboard', value: true },
-      { section: 'Analytics', name: 'Post performance tracking', value: true },
-      { section: 'Support', name: 'Email support', value: true },
-      { section: 'Support', name: 'Priority support', value: false },
-      { section: 'Support', name: 'White-label', value: false },
-    ],
-  },
-  {
     name: 'Agency',
     slug: 'agency',
     description: 'Automated growth at scale for agencies and power users.',
-    priceMonthly: 199,
+    priceMonthly: 299,
     href: 'https://my.poaster.app/signup',
     highlights: [
-      { description: 'Unlimited posts/month' },
-      { description: '50 websites' },
-      { description: '100 social accounts' },
+      { description: '100 Substacks or Websites' },
+      { description: '100,000 extracted quotes' },
+      { description: '500 connected social accounts' },
       { description: 'Custom branding & white-label' },
-      { description: 'Priority support' },
+      { description: 'Premium support' },
     ],
     features: [
       { section: 'Posting', name: 'AI posts per month', value: 'Unlimited' },
-      { section: 'Posting', name: 'Connected websites', value: 50 },
-      { section: 'Posting', name: 'Social accounts', value: 100 },
+      { section: 'Posting', name: 'Connected websites', value: 100 },
+      { section: 'Posting', name: 'Social accounts', value: 500 },
       { section: 'Posting', name: 'No "@PoasterApp" watermark', value: true },
       { section: 'Posting', name: 'Custom branding', value: true },
       { section: 'Publishing', name: 'Custom post schedule', value: true },
@@ -137,8 +110,8 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Simple, affordable pricing.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Start for free and grow your Substack without spending a dime.<br/>
-        Upgrade when you need more posts, more platforms, or more power.<br/>
+        Start growing your Substack for $1/month.<br/>
+        Upgrade when you need more websites, more quotes, or more social accounts.<br/>
         No hidden fees, no surprises.
       </Lead>
     </Container>
@@ -150,7 +123,7 @@ function PricingCards() {
     <div className="relative py-24">
       <Gradient className="absolute inset-x-2 top-48 bottom-0 rounded-4xl ring-1 ring-black/5 ring-inset" />
       <Container className="relative">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 xl:grid-cols-3">
           {tiers.map((tier, tierIndex) => (
             <PricingCard key={tierIndex} tierIndex={tierIndex} tier={tier} />
           ))}
@@ -218,10 +191,6 @@ function PricingTable({ selectedTier }) {
             data-selected={selectedTier === tiers[2] ? true : undefined}
             className="w-2/5 data-selected:table-column max-sm:hidden sm:w-[15%]"
           />
-          <col
-            data-selected={selectedTier === tiers[3] ? true : undefined}
-            className="w-2/5 data-selected:table-column max-sm:hidden sm:w-[15%]"
-          />
         </colgroup>
         <thead>
           <tr className="max-sm:hidden">
@@ -271,7 +240,7 @@ function PricingTable({ selectedTier }) {
                 </div>
               </div>
             </td>
-            <td colSpan={4} className="p-0 text-right">
+            <td colSpan={3} className="p-0 text-right">
               <Button variant="outline" href={selectedTier.href}>
                 Get started
               </Button>
@@ -300,7 +269,7 @@ function PricingTable({ selectedTier }) {
               <tr>
                 <th
                   scope="colgroup"
-                  colSpan={5}
+                  colSpan={4}
                   className="px-0 pt-10 pb-0 group-first-of-type:pt-5"
                 >
                   <div className="-mx-4 rounded-lg bg-gray-50 px-4 py-3 text-sm/6 font-semibold">
