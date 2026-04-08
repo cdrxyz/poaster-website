@@ -153,12 +153,12 @@ function PricingCard({ tierIndex, tier }) {
           </div>
           <div className="mt-8">
             <Button href={tier.href} variant={tierIndex !== 2 ? "secondary" : undefined}>
-              {tier.priceMonthly === 0 ? 'Get started free' : 'Get started'}
+              Get started
             </Button>
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
-              {tier.priceMonthly === 0 ? 'Includes:' : 'Everything in ' + (tierIndex > 0 ? tiers[tierIndex - 1].name : 'Free') + ', plus:'}
+              {tierIndex > 0 ? 'Everything in ' + tiers[tierIndex - 1].name + ', plus:' : 'Includes:'}
             </h3>
             <ul className="mt-3 space-y-3">
               {tier.highlights.map((props, featureIndex) => (
@@ -426,10 +426,11 @@ function FrequentlyAskedQuestions() {
               Is there a free trial, or do I need a credit card to start?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Poaster has a free tier that never expires—no credit card required.
-              You get 3 AI-generated posts per week and 1 connected social
-              account so you can experience real growth before upgrading. When
-              you&apos;re ready for more, paid plans start at just $9/month.
+              Poaster starts at just $1/month—no credit card required.
+              You get 1 Substack or website, 10 extracted quotes at a time,
+              and 1 connected social account so you can experience real growth
+              before upgrading. When you&apos;re ready for more, paid plans start
+              at just $10/month.
             </dd>
           </dl>
           <dl>
