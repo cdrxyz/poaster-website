@@ -118,14 +118,14 @@ function BentoSection() {
         <BentoCard
           eyebrow="Share"
           title="Find Your Future Readers Where They Are"
-          description="X. Instagram. Facebook. LinkedIn. TikTok. We get your quotes in front of your future readers, wherever they are."
+          description="X. LinkedIn. Hypefury. We get your quotes in front of your future readers, wherever they are."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Scheduled Posts"
           title="Be the Poaster, Without Doing any Posting"
-          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world awwait."
+          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world await."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
