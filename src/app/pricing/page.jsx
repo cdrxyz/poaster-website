@@ -16,14 +16,14 @@ import {
 
 export const metadata = {
   title: 'Pricing',
-  description: 'Grow your Substack with AI. Plans from $1/month. Starter at $10. Agency at $299.',
+  description: 'Start growing your Substack from as low as $1/month.',
 }
 
 const tiers = [
   {
     name: 'Basic',
     slug: 'basic',
-    description: 'Get started and grow your Substack.',
+    description: 'Anyone can afford to grow.',
     priceMonthly: 1,
     href: 'https://my.poaster.app/signup',
     highlights: [
@@ -50,7 +50,7 @@ const tiers = [
   {
     name: 'Starter',
     slug: 'starter',
-    description: 'For writers serious about growing their audience.',
+    description: 'Professional grade growth engine.',
     priceMonthly: 10,
     href: 'https://my.poaster.app/signup',
     highlights: [
@@ -78,7 +78,7 @@ const tiers = [
   {
     name: 'Agency',
     slug: 'agency',
-    description: 'Automated growth at scale for agencies and power users.',
+    description: 'Automated growth at scale.',
     priceMonthly: 299,
     href: 'https://my.poaster.app/signup',
     highlights: [
@@ -110,11 +110,11 @@ const tiers = [
 function Header() {
   return (
     <Container className="mt-16">
-      <Heading as="h1">Simple, affordable pricing.</Heading>
+      <Heading as="h1">Grow your Substack, affordably.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Start growing your Substack for $1/month.<br/>
-        Upgrade when you need more websites, more quotes, or more social accounts.<br/>
-        No hidden fees, no surprises.
+        No need to blow $5000/month on an agency or army of VAs.<br/>
+        Poaster uses agentic AI to efficiently grow your Substack.<br/>
+        Starting from just $1/month.
       </Lead>
     </Container>
   )
@@ -160,7 +160,7 @@ function PricingCard({ tierIndex, tier }) {
           </div>
           <div className="mt-8">
             <h3 className="text-sm/6 font-medium text-gray-950">
-              {tierIndex > 0 ? 'Everything in ' + tiers[tierIndex - 1].name + ', plus:' : 'Includes:'}
+              Start growing with:
             </h3>
             <ul className="mt-3 space-y-3">
               {tier.highlights.map((props, featureIndex) => (
@@ -484,7 +484,7 @@ function FrequentlyAskedQuestions() {
 }
 
 export default function Pricing() {
-  let tier = tiers[2]
+  let tier = tiers[0]
   return (
     <main className="overflow-hidden">
       <GradientBackground />
