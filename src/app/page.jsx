@@ -197,10 +197,10 @@ function CallToAction() {
         </h2>
         <div className="mt-10 flex items-center gap-x-6 px-10 lg:mt-0 lg:shrink-0">
           <Button href="https://my.poaster.app/signup">I'm Ready.</Button>
-          <a href="/pricing" className="text-sm/6 font-semibold text-gray-900">
+          <Link href="/pricing" className="text-sm/6 font-semibold text-gray-900">
             Plans
             <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
