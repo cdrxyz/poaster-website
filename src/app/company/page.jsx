@@ -4,6 +4,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
+import { assetUrl } from '@/lib/asset'
 
 export const metadata = {
   title: 'Company',
@@ -39,28 +40,28 @@ function Header() {
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/1.jpg"
+                src={assetUrl('/company/1.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/2.jpg"
+                src={assetUrl('/company/2.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/3.jpg"
+                src={assetUrl('/company/3.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/4.jpg"
+                src={assetUrl('/company/4.jpg')}
                 className="block size-full object-cover"
               />
             </div>
@@ -132,7 +133,7 @@ function Story() {
           <div className="aspect-3/2 overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
             <img
               alt=""
-              src="/company/5.jpg"
+              src={assetUrl('/company/5.jpg')}
               className="block size-full object-cover"
             />
           </div>

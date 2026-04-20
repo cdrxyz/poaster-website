@@ -5,6 +5,7 @@ import { Gradient, GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
+import { assetUrl } from '@/lib/asset'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import {
   CheckIcon,
@@ -360,7 +361,7 @@ function PlusIcon(props) {
 
 function Testimonial() {
   return (
-    <div className="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pt-72 pb-24 lg:pt-36">
+    <div className="mx-2 my-24 rounded-4xl bg-gray-900 pt-72 pb-24 lg:pt-36" style={{ backgroundImage: `url(${assetUrl('/dot-texture.svg')})` }}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
           <div className="-mt-96 lg:-mt-52">
@@ -369,7 +370,7 @@ function Testimonial() {
                 <div className="overflow-hidden rounded-3xl shadow-2xl outline-solid outline-1 -outline-offset-1 outline-black/10">
                   <img
                     alt=""
-                    src="/testimonials/tina-yards.jpg"
+                    src={assetUrl('/testimonials/tina-yards.jpg')}
                     className="aspect-3/4 w-full object-cover"
                   />
                 </div>
