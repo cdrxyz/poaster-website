@@ -19,7 +19,7 @@ function CallToAction() {
         Starting from just $1/month.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
+        <Button className="w-full sm:w-auto" href="https://my.poaster.app/signup">
           I'm Ready
         </Button>
       </div>
