@@ -1,5 +1,6 @@
 import { clsx } from 'clsx'
 import { Mark } from './logo'
+import { assetUrl } from '@/lib/asset'
 
 function Row({ children }) {
   return (
@@ -47,72 +48,72 @@ export function LogoTimeline() {
         <Row>
           <Logo
             label="X (Twitter)"
-            src="/logo-timeline/x.svg"
+            src={assetUrl('/logo-timeline/x.svg')}
             className="[animation-delay:-26s] [animation-duration:30s]"
           />
           <Logo
             label="LinkedIn"
-            src="/logo-timeline/linkedin.svg"
+            src={assetUrl('/logo-timeline/linkedin.svg')}
             className="[animation-delay:-8s] [animation-duration:30s]"
           />
         </Row>
         <Row>
           <Logo
             label="Hypefury"
-            src="/logo-timeline/hypefury.svg"
+            src={assetUrl('/logo-timeline/hypefury.svg')}
             className="[animation-delay:-40s] [animation-duration:40s]"
           />
           <Logo
             label="Substack"
-            src="/logo-timeline/substack.svg"
+            src={assetUrl('/logo-timeline/substack.svg')}
             className="[animation-delay:-20s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
             label="X (Twitter)"
-            src="/logo-timeline/x.svg"
+            src={assetUrl('/logo-timeline/x.svg')}
             className="[animation-delay:-10s] [animation-duration:40s]"
           />
           <Logo
             label="LinkedIn"
-            src="/logo-timeline/linkedin.svg"
+            src={assetUrl('/logo-timeline/linkedin.svg')}
             className="[animation-delay:-32s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
             label="Hypefury"
-            src="/logo-timeline/hypefury.svg"
+            src={assetUrl('/logo-timeline/hypefury.svg')}
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
             label="Substack"
-            src="/logo-timeline/substack.svg"
+            src={assetUrl('/logo-timeline/substack.svg')}
             className="[animation-delay:-23s] [animation-duration:45s]"
           />
         </Row>
         <Row>
           <Logo
             label="X (Twitter)"
-            src="/logo-timeline/x.svg"
+            src={assetUrl('/logo-timeline/x.svg')}
             className="[animation-delay:-55s] [animation-duration:60s]"
           />
           <Logo
             label="LinkedIn"
-            src="/logo-timeline/linkedin.svg"
+            src={assetUrl('/logo-timeline/linkedin.svg')}
             className="[animation-delay:-20s] [animation-duration:60s]"
           />
         </Row>
         <Row>
           <Logo
             label="Hypefury"
-            src="/logo-timeline/hypefury.svg"
+            src={assetUrl('/logo-timeline/hypefury.svg')}
             className="[animation-delay:-9s] [animation-duration:40s]"
           />
           <Logo
             label="Substack"
-            src="/logo-timeline/substack.svg"
+            src={assetUrl('/logo-timeline/substack.svg')}
             className="[animation-delay:-28s] [animation-duration:40s]"
           />
         </Row>
