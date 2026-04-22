@@ -1,5 +1,4 @@
 import { clsx } from 'clsx'
-import { assetUrl } from '@/lib/asset'
 
 export function LogoCloud({ className }) {
   return (
@@ -11,27 +10,27 @@ export function LogoCloud({ className }) {
     >
       <img
         alt="SavvyCal"
-        src={assetUrl('/logo-cloud/savvycal.svg')}
+        src="/logo-cloud/savvycal.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Laravel"
-        src={assetUrl('/logo-cloud/laravel.svg')}
+        src="/logo-cloud/laravel.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Tuple"
-        src={assetUrl('/logo-cloud/tuple.svg')}
+        src="/logo-cloud/tuple.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Transistor"
-        src={assetUrl('/logo-cloud/transistor.svg')}
+        src="/logo-cloud/transistor.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Statamic"
-        src={assetUrl('/logo-cloud/statamic.svg')}
+        src="/logo-cloud/statamic.svg"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
     </div>

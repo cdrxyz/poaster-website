@@ -17,7 +17,7 @@ export default function Login() {
       <GradientBackground />
       <div className="isolate flex min-h-dvh items-center justify-center p-6 lg:p-8">
         <div className="w-full max-w-md rounded-xl bg-white shadow-md ring-1 ring-black/5">
-          <form action="https://my.poaster.app/auth/sign_in" method="POST" className="p-7 sm:p-11">
+          <form action="#" method="POST" className="p-7 sm:p-11">
             <div className="flex items-start">
               <Link href="/" title="Home">
                 <Mark className="h-9 fill-black" />
@@ -68,7 +68,7 @@ export default function Login() {
                 </Checkbox>
                 <Label>Remember me</Label>
               </Field>
-              <Link href="https://my.poaster.app/auth/password/new" className="font-medium hover:text-gray-600">
+              <Link href="#" className="font-medium hover:text-gray-600">
                 Forgot password?
               </Link>
             </div>
@@ -80,7 +80,7 @@ export default function Login() {
           </form>
           <div className="m-1.5 rounded-lg bg-gray-50 py-4 text-center text-sm/5 ring-1 ring-black/5">
             Not a member?{' '}
-            <Link href="https://my.poaster.app/signup" className="font-medium hover:text-gray-600">
+            <Link href="#" className="font-medium hover:text-gray-600">
               Create an account
             </Link>
           </div>
