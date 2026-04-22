@@ -3,6 +3,7 @@ import { Container } from '@/components/container'
 import { Footer } from '@/components/footer'
 import { Gradient, GradientBackground } from '@/components/gradient'
 import { Link } from '@/components/link'
+import { LogoCloud } from '@/components/logo-cloud'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
 import { assetUrl } from '@/lib/asset'
@@ -130,6 +131,7 @@ function PricingCards() {
             <PricingCard key={tierIndex} tierIndex={tierIndex} tier={tier} />
           ))}
         </div>
+        {/*<LogoCloud className="mt-24" />*/}
       </Container>
     </div>
   )
@@ -493,9 +495,9 @@ export default function Pricing() {
       </Container>
       <Header />
       <PricingCards />
-      <PricingTable selectedTier={tier} />
+      {/*<PricingTable selectedTier={tier} />*/}
       <Testimonial />
-      <FrequentlyAskedQuestions />
+      {/*<FrequentlyAskedQuestions />*/}
       <Footer />
     </main>
   )

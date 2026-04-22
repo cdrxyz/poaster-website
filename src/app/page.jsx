@@ -6,6 +6,7 @@ import { Gradient } from '@/components/gradient'
 import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
+import { LogoCloud } from '@/components/logo-cloud'
 import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
@@ -83,6 +84,7 @@ function BentoSection() {
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
+        {/* Use substack-growth-h.png here instead */}
         <BentoCard
           eyebrow="Analysis"
           title="Use What Works: Your Voice"
@@ -93,6 +95,7 @@ function BentoSection() {
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
+        {/*<div className="h-80 bg-[url(/screenshots/substack-growth-h.png)] bg-size-[2330px_1700px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />*/}
         <BentoCard
           eyebrow="Smart Quotes"
           title="Our AI Agents Bring Out Your Best"
@@ -212,7 +215,11 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
+        {/*<Container className="mt-10">*/}
+        {/*  <LogoCloud />*/}
+        {/*</Container>*/}
         <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+          {/*<FeatureSection />*/}
           <BentoSection />
         </div>
         <CallToAction />
