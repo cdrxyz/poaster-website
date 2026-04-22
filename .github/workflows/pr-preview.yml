@@ -71,6 +71,8 @@ jobs:
           publish_dir: ./out
           destination_dir: pr-preview/${{ github.event.pull_request.number }}
           keep_files: true
+          user_name: eizus
+          user_email: hello@cdr.xyz
 
       - name: Comment preview URL
         uses: peter-evans/create-or-update-comment@v4
@@ -100,8 +102,8 @@ jobs:
         run: |
           cd gh-pages
           rm -rf pr-preview/${{ github.event.pull_request.number }}
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "eizus"
+          git config user.email "hello@cdr.xyz"
           git add -A
           git diff --staged --quiet || git commit -m "Remove PR preview for #${{ github.event.pull_request.number }}"
           git push
