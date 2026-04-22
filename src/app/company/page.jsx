@@ -5,6 +5,7 @@ import { Footer } from '@/components/footer'
 import { GradientBackground } from '@/components/gradient'
 import { Navbar } from '@/components/navbar'
 import { Heading, Lead, Subheading } from '@/components/text'
+import { assetUrl } from '@/lib/asset'
 
 export const metadata = {
   title: 'Company',
@@ -17,7 +18,7 @@ function Header() {
     <Container className="mt-16">
       <Heading as="h1">Writers helping writers.</Heading>
       <Lead className="mt-6 max-w-3xl">
-        Founded by writers and cracked software engineeers to help grow your Substack.
+        Founded by writers and cracked software engineers to help grow your Substack.
       </Lead>
       <section className="mt-16 grid grid-cols-1 lg:grid-cols-2 lg:gap-12">
         <div className="max-w-lg">
@@ -27,7 +28,7 @@ function Header() {
             writing. Our mission is to empower writers to grow their audience
             without taking time away from their craft. By leveraging AI technology,
             we help writers extract viral quotes from their long-form articles
-            and automatically post it to their social media platforms. Growth can be effortless.
+            and automatically post them to their social media platforms. Growth can be effortless.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
             Founded by a team of passionate writers and cracked software engineers,
@@ -40,28 +41,28 @@ function Header() {
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/1.jpg"
+                src={assetUrl('/company/1.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/2.jpg"
+                src={assetUrl('/company/2.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
-                src="/company/3.jpg"
+                src={assetUrl('/company/3.jpg')}
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/4.jpg"
+                src={assetUrl('/company/4.jpg')}
                 className="block size-full object-cover"
               />
             </div>
@@ -105,7 +106,7 @@ function Header() {
 function Person({ name, description, img }) {
   return (
     <li className="flex items-center gap-4">
-      <img alt="" src={img} className="size-12 rounded-full" />
+      <img alt="" src={assetUrl(img)} className="size-12 rounded-full" />
       <div className="text-sm/6">
         <h3 className="font-medium">{name}</h3>
         <p className="text-gray-500">{description}</p>
@@ -217,6 +218,7 @@ function Team() {
   )
 }
 
+
 function Investors() {
   return (
     <Container className="mt-32">
@@ -227,37 +229,46 @@ function Investors() {
       <Lead className="mt-6 max-w-3xl">
         Self-funded, no investors, we only report to our customers.
       </Lead>
+      <div className="mt-10">
+        <p className="max-w-lg text-sm/6 text-gray-500">
+          Poaster is self-funded, built initially to help a single Substack writer.
+          Now, offering the same tools that worked for them to any Substack author or
+          small business marketing team looking to grow their audience without extra effort.
+        </p>
+      </div>
       {/*<Subheading as="h3" className="mt-24">*/}
       {/*  Venture Capital*/}
       {/*</Subheading>*/}
       {/*<hr className="mt-6 border-t border-gray-200" />*/}
-      <ul
-        role="list"
-        className="mx-auto mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2"
-      >
-        <li>
-          {/*<img*/}
-          {/*  alt="Remington Schwartz"*/}
-          {/*  src="/investors/remington-schwartz.svg"*/}
-          {/*  className="h-14"*/}
-          {/*/>*/}
-          <p className="mt-6 max-w-lg text-sm/6 text-gray-500">
-            Poaster is self-funded, built initially to help a single Substack writer.
-            Now, offering the same tools that worked for him to any Substack author or
-            small business marketing team looking to grow their audience without extra effort.
-          </p>
-        </li>
-        {/*<li>*/}
-        {/*  <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />*/}
-        {/*  <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
-        {/*    Deccel has been at the forefront of innovation, investing in*/}
-        {/*    pioneering companies across various sectors, including technology,*/}
-        {/*    consumer goods, and healthcare. Their philosophy of ‘plausible*/}
-        {/*    deniability’ and dedication to looking the other way have helped*/}
-        {/*    produce some of the world’s most controversial companies.*/}
-        {/*  </p>*/}
-        {/*</li>*/}
-      </ul>
+      {/*<ul*/}
+      {/*  role="list"*/}
+      {/*  className="mx-auto mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2"*/}
+      {/*>*/}
+      {/*  <li>*/}
+      {/*    <img*/}
+      {/*      alt="Remington Schwartz"*/}
+      {/*      src="/investors/remington-schwartz.svg"*/}
+      {/*      className="h-14"*/}
+      {/*    />*/}
+      {/*    <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
+      {/*      Remington Schwartz has been a driving force behind our*/}
+      {/*      company’s growth, helping us raise capital and providing*/}
+      {/*      strategic guidance as we scale. Their expertise in enterprise*/}
+      {/*      software and deep network of industry connections have been*/}
+      {/*      invaluable to our success.*/}
+      {/*    </p>*/}
+      {/*  </li>*/}
+      {/*  <li>*/}
+      {/*    <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />*/}
+      {/*    <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
+      {/*      Deccel has been at the forefront of innovation, investing in*/}
+      {/*      pioneering companies across various sectors, including technology,*/}
+      {/*      consumer goods, and healthcare. Their philosophy of ‘plausible*/}
+      {/*      deniability’ and dedication to looking the other way have helped*/}
+      {/*      produce some of the world’s most controversial companies.*/}
+      {/*    </p>*/}
+      {/*  </li>*/}
+      {/*</ul>*/}
       {/*<Subheading as="h3" className="mt-24">*/}
       {/*  Individual investors*/}
       {/*</Subheading>*/}
@@ -439,6 +450,7 @@ function Careers() {
     </Container>
   )
 }
+
 
 export default function Company() {
   return (

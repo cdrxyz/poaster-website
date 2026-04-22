@@ -3,6 +3,7 @@
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'
 import { Mark } from './logo'
+import { assetUrl } from '@/lib/asset'
 
 function Circle({ size, delay, opacity }) {
   return (
@@ -84,40 +85,22 @@ export function LogoCluster() {
       <div className="absolute left-1/2 h-full w-104 -translate-x-1/2">
         <MainLogo />
         <Logo
-          src="/logo-cluster/career-builder.svg"
+          src={assetUrl('/logo-cluster/x.svg')}
           left={360}
           top={144}
           hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
         />
         <Logo
-          src="/logo-cluster/dribbble.svg"
+          src={assetUrl('/logo-cluster/linkedin.svg')}
           left={285}
           top={20}
           hover={{ x: 4, y: -5, rotate: 6, delay: 0.3 }}
         />
         <Logo
-          src="/logo-cluster/glassdoor.svg"
+          src={assetUrl('/logo-cluster/hypefury.svg')}
           left={255}
           top={210}
           hover={{ x: 3, y: 5, rotate: 7, delay: 0.2 }}
-        />
-        <Logo
-          src="/logo-cluster/linkedin.svg"
-          left={144}
-          top={40}
-          hover={{ x: -2, y: -5, rotate: -6, delay: 0.15 }}
-        />
-        <Logo
-          src="/logo-cluster/upwork.svg"
-          left={36}
-          top={56}
-          hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
-        />
-        <Logo
-          src="/logo-cluster/we-work-remotely.svg"
-          left={96}
-          top={176}
-          hover={{ x: -3, y: 5, rotate: 3, delay: 0.15 }}
         />
       </div>
     </div>
