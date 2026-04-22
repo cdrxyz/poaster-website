@@ -5,9 +5,9 @@ import { Navbar } from '@/components/navbar'
 import { Heading } from '@/components/text'
 
 export const metadata = {
-  title: 'Terms & Conditions',
+  title: 'Privacy Policy',
   description:
-    'Terms & Conditions.',
+    'Privacy Policy.',
 }
 
 function Header() {
