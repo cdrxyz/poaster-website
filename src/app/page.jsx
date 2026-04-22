@@ -6,6 +6,7 @@ import { Gradient } from '@/components/gradient'
 import { Keyboard } from '@/components/keyboard'
 import { Link } from '@/components/link'
 import { LinkedAvatars } from '@/components/linked-avatars'
+import { LogoCloud } from '@/components/logo-cloud'
 import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
@@ -13,6 +14,7 @@ import { Navbar } from '@/components/navbar'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials'
 import { Heading, Subheading } from '@/components/text'
+import { assetUrl } from '@/lib/asset'
 import { ChevronRightIcon } from '@heroicons/react/16/solid'
 
 export const metadata = {
@@ -63,7 +65,7 @@ function FeatureSection() {
         <Screenshot
           width={1216}
           height={768}
-          src="/screenshots/app.png"
+          src={assetUrl('/screenshots/app.png')}
           className="mt-16 h-144 sm:h-auto sm:w-304"
         />
       </Container>
@@ -88,7 +90,7 @@ function BentoSection() {
           title="Use What Works: Your Voice"
           description="Your readers already love your writing, so give the people what they want. We automate your social media growth so your words go farther, and your Substack revenue & subscriber count goes up."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/substack-growth-h.png)] bg-size-[500px_400px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-no-repeat" style={{ backgroundImage: `url(${assetUrl('/screenshots/substack-growth-h.png')})`, backgroundSize: '500px 400px' }} />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -99,7 +101,7 @@ function BentoSection() {
           title="Our AI Agents Bring Out Your Best"
           description="Some writers flood their social media accounts with AI slop to grow. But, it doesn't work. Our AI agents choose the best quotes and selections from your long-form articles. Your feed remains purely in your voice. Always."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/website-substack-review.png)] bg-size-[2330px_1700px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-no-repeat" style={{ backgroundImage: `url(${assetUrl('/screenshots/website-substack-review.png')})`, backgroundSize: '2330px 1700px', backgroundPosition: 'left -109px top -112px' }} />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -118,14 +120,14 @@ function BentoSection() {
         <BentoCard
           eyebrow="Share"
           title="Find Your Future Readers Where They Are"
-          description="X. Instagram. Facebook. LinkedIn. TikTok. We get your quotes in front of your future readers, wherever they are."
+          description="X. LinkedIn. Hypefury. We get your quotes in front of your future readers, wherever they are."
           graphic={<LogoCluster />}
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Scheduled Posts"
           title="Be the Poaster, Without Doing any Posting"
-          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world awwait."
+          description="Choose your own custom posting schedule. Your feeds are always fresh with your quotes and long-form articles. New readers around the world await."
           graphic={<Map />}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
@@ -150,7 +152,7 @@ function DarkBentoSection() {
             title="Agents that find the viral quotes you already wrote"
             description="Our AI Agents are trained to choose the best quotes which will go viral and grow your Substack when posted on social media."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/website-substack-review.png)] bg-size-[1165px_850px] bg-position-[left_-109px_top_-112px] bg-no-repeat" />
+              <div className="h-80 bg-no-repeat" style={{ backgroundImage: `url(${assetUrl('/screenshots/website-substack-review.png')})`, backgroundSize: '1165px 850px', backgroundPosition: 'left -109px top -112px' }} />
             }
             fade={['top']}
             className="max-lg:rounded-t-4xl lg:col-span-4 lg:rounded-tl-4xl"
@@ -178,7 +180,7 @@ function DarkBentoSection() {
             title="Set up once. Even for articles you haven't written yet."
             description="Setup only takes minutes, and even includes future articles you haven't yet published. Just add our custom email as a paid subscriber to your Substack and we'll handle the rest."
             graphic={
-              <div className="h-80 bg-[url(/screenshots/website-settings.png)] bg-size-[750px_550px] bg-no-repeat" />
+              <div className="h-80 bg-no-repeat" style={{ backgroundImage: `url(${assetUrl('/screenshots/website-settings.png')})`, backgroundSize: '750px 550px' }} />
             }
             fade={['top']}
             className="max-lg:rounded-b-4xl lg:col-span-4 lg:rounded-br-4xl"
@@ -198,10 +200,10 @@ function CallToAction() {
         </h2>
         <div className="mt-10 flex items-center gap-x-6 px-10 lg:mt-0 lg:shrink-0">
           <Button href="https://my.poaster.app/signup">I'm Ready.</Button>
-          <a href="/pricing" className="text-sm/6 font-semibold text-gray-900">
+          <Link href="/pricing" className="text-sm/6 font-semibold text-gray-900">
             Plans
             <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
