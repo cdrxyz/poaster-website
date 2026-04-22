@@ -8,12 +8,12 @@ export async function GET() {
   let siteUrl = 'https://poaster.app'
 
   let feed = new Feed({
-    title: 'The Poaster Blog',
+    title: 'The Radiant Blog',
     description:
-      'Stay informed with product updates, company news, and insights on growing your Substack with AI.',
+      'Stay informed with product updates, company news, and insights on how to sell smarter at your company.',
     author: {
-      name: 'Poaster',
-      email: 'hello@poaster.app',
+      name: 'Michael Foster',
+      email: 'michael.foster@example.com',
     },
     id: siteUrl,
     link: siteUrl,

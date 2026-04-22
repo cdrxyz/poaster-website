@@ -59,7 +59,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          NEXT_PUBLIC_BASE_PATH: /pr-preview/${{ github.event.pull_request.number }}
+          NEXT_PUBLIC_BASE_PATH: /poaster-website/pr-preview/${{ github.event.pull_request.number }}
 
       - name: Remove CNAME from preview build
         run: rm -f ./out/CNAME

@@ -2,8 +2,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Poaster',
-    default: 'Poaster - Grow your Substack with AI',
+    template: '%s - Radiant',
+    default: 'Radiant - Close every deal',
   },
 }
 
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
           rel="alternate"
           type="application/rss+xml"
           href="/blog/feed.xml"
-          title="Poaster Blog"
+          title="Radiant Blog"
         />
       </head>
       <body className="bg-gray-50 text-gray-950 antialiased">

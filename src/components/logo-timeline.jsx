@@ -1,6 +1,5 @@
 import { clsx } from 'clsx'
 import { Mark } from './logo'
-import { assetUrl } from '@/lib/asset'
 
 function Row({ children }) {
   return (
@@ -47,73 +46,73 @@ export function LogoTimeline() {
       <div className="@container absolute inset-0 grid grid-cols-1 pt-8">
         <Row>
           <Logo
-            label="X (Twitter)"
-            src={assetUrl('/logo-timeline/x.svg')}
+            label="Loom"
+            src="/logo-timeline/loom.svg"
             className="[animation-delay:-26s] [animation-duration:30s]"
           />
           <Logo
-            label="LinkedIn"
-            src={assetUrl('/logo-timeline/linkedin.svg')}
+            label="Gmail"
+            src="/logo-timeline/gmail.svg"
             className="[animation-delay:-8s] [animation-duration:30s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Hypefury"
-            src={assetUrl('/logo-timeline/hypefury.svg')}
+            label="Asana"
+            src="/logo-timeline/asana.svg"
             className="[animation-delay:-40s] [animation-duration:40s]"
           />
           <Logo
-            label="Substack"
-            src={assetUrl('/logo-timeline/substack.svg')}
+            label="Microsoft Teams"
+            src="/logo-timeline/microsoft-teams.svg"
             className="[animation-delay:-20s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="X (Twitter)"
-            src={assetUrl('/logo-timeline/x.svg')}
+            label="Google Calendar"
+            src="/logo-timeline/google-calendar.svg"
             className="[animation-delay:-10s] [animation-duration:40s]"
           />
           <Logo
-            label="LinkedIn"
-            src={assetUrl('/logo-timeline/linkedin.svg')}
+            label="Google Drive"
+            src="/logo-timeline/google-drive.svg"
             className="[animation-delay:-32s] [animation-duration:40s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Hypefury"
-            src={assetUrl('/logo-timeline/hypefury.svg')}
+            label="Basecamp"
+            src="/logo-timeline/basecamp.svg"
             className="[animation-delay:-45s] [animation-duration:45s]"
           />
           <Logo
-            label="Substack"
-            src={assetUrl('/logo-timeline/substack.svg')}
+            label="Discord"
+            src="/logo-timeline/discord.svg"
             className="[animation-delay:-23s] [animation-duration:45s]"
           />
         </Row>
         <Row>
           <Logo
-            label="X (Twitter)"
-            src={assetUrl('/logo-timeline/x.svg')}
+            label="Hubspot"
+            src="/logo-timeline/hubspot.svg"
             className="[animation-delay:-55s] [animation-duration:60s]"
           />
           <Logo
-            label="LinkedIn"
-            src={assetUrl('/logo-timeline/linkedin.svg')}
+            label="Slack"
+            src="/logo-timeline/slack.svg"
             className="[animation-delay:-20s] [animation-duration:60s]"
           />
         </Row>
         <Row>
           <Logo
-            label="Hypefury"
-            src={assetUrl('/logo-timeline/hypefury.svg')}
+            label="Adobe Creative Cloud"
+            src="/logo-timeline/adobe-creative-cloud.svg"
             className="[animation-delay:-9s] [animation-duration:40s]"
           />
           <Logo
-            label="Substack"
-            src={assetUrl('/logo-timeline/substack.svg')}
+            label="Zoom"
+            src="/logo-timeline/zoom.svg"
             className="[animation-delay:-28s] [animation-duration:40s]"
           />
         </Row>
