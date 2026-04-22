@@ -103,6 +103,18 @@ function Header() {
   )
 }
 
+function Person({ name, description, img }) {
+  return (
+    <li className="flex items-center gap-4">
+      <img alt="" src={assetUrl(img)} className="size-12 rounded-full" />
+      <div className="text-sm/6">
+        <h3 className="font-medium">{name}</h3>
+        <p className="text-gray-500">{description}</p>
+      </div>
+    </li>
+  )
+}
+
 function Team() {
   return (
     <Container className="mt-32">
@@ -224,6 +236,78 @@ function Investors() {
           small business marketing team looking to grow their audience without extra effort.
         </p>
       </div>
+      {/*<Subheading as="h3" className="mt-24">*/}
+      {/*  Venture Capital*/}
+      {/*</Subheading>*/}
+      {/*<hr className="mt-6 border-t border-gray-200" />*/}
+      {/*<ul*/}
+      {/*  role="list"*/}
+      {/*  className="mx-auto mt-10 grid grid-cols-1 gap-8 lg:grid-cols-2"*/}
+      {/*>*/}
+      {/*  <li>*/}
+      {/*    <img*/}
+      {/*      alt="Remington Schwartz"*/}
+      {/*      src="/investors/remington-schwartz.svg"*/}
+      {/*      className="h-14"*/}
+      {/*    />*/}
+      {/*    <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
+      {/*      Remington Schwartz has been a driving force behind our*/}
+      {/*      company’s growth, helping us raise capital and providing*/}
+      {/*      strategic guidance as we scale. Their expertise in enterprise*/}
+      {/*      software and deep network of industry connections have been*/}
+      {/*      invaluable to our success.*/}
+      {/*    </p>*/}
+      {/*  </li>*/}
+      {/*  <li>*/}
+      {/*    <img alt="Deccel" src="/investors/deccel.svg" className="h-14" />*/}
+      {/*    <p className="mt-6 max-w-lg text-sm/6 text-gray-500">*/}
+      {/*      Deccel has been at the forefront of innovation, investing in*/}
+      {/*      pioneering companies across various sectors, including technology,*/}
+      {/*      consumer goods, and healthcare. Their philosophy of ‘plausible*/}
+      {/*      deniability’ and dedication to looking the other way have helped*/}
+      {/*      produce some of the world’s most controversial companies.*/}
+      {/*    </p>*/}
+      {/*  </li>*/}
+      {/*</ul>*/}
+      {/*<Subheading as="h3" className="mt-24">*/}
+      {/*  Individual investors*/}
+      {/*</Subheading>*/}
+      {/*<hr className="mt-6 border-t border-gray-200" />*/}
+      {/*<ul*/}
+      {/*  role="list"*/}
+      {/*  className="mx-auto mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"*/}
+      {/*>*/}
+      {/*  <Person*/}
+      {/*    name="Kristin Watson"*/}
+      {/*    description="TechNexus Ventures"*/}
+      {/*    img="/individual-investors/kristin-watson.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Emma Dorsey"*/}
+      {/*    description="Innovate Capital Partners"*/}
+      {/*    img="/individual-investors/emma-dorsey.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Alicia Bell"*/}
+      {/*    description="FutureWave Investments"*/}
+      {/*    img="/individual-investors/alicia-bell.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Jenny Wilson"*/}
+      {/*    description="SynergyTech Equity"*/}
+      {/*    img="/individual-investors/jenny-wilson.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Anna Roberts"*/}
+      {/*    description="NextGen Horizons"*/}
+      {/*    img="/individual-investors/anna-roberts.jpg"*/}
+      {/*  />*/}
+      {/*  <Person*/}
+      {/*    name="Benjamin Russel"*/}
+      {/*    description="Pioneer Digital Ventures"*/}
+      {/*    img="/individual-investors/benjamin-russel.jpg"*/}
+      {/*  />*/}
+      {/*</ul>*/}
     </Container>
   )
 }
